@@ -1,0 +1,9 @@
+@import "./colors";
+
+@mixin font-h1($size: 4rem) {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: $size;
+  text-transform: uppercase;
+  color: $brand_orange;
+}

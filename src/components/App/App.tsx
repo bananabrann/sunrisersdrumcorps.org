@@ -1,10 +1,10 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 
-function App() {
+const App: React.FC<never> = () => {
   return (
     <div className="App">
-      Placeholder
+      <h1>Hello Sunrisers!</h1>
     </div>
   );
 }
