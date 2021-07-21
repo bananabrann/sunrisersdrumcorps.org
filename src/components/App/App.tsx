@@ -1,12 +1,24 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "../Home/Home";
 import "./App.scss";
 
-const App: React.FC<never> = () => {
+const App = () => {
   return (
     <div className="App">
-      <h1>Hello Sunrisers!</h1>
+      <Router>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => {
+              return <Home />;
+            }}
+          />
+        </Switch>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;

@@ -7,3 +7,25 @@
   text-transform: uppercase;
   color: $brand_orange;
 }
+
+/*
+  SECTION - Buttons
+*/
+
+@mixin button() {
+  text-align: center;
+
+
+    cursor: pointer;
+
+}
+
+@mixin main-button() {
+  @include button();
+  @include font-h1();
+
+  font-style: italic;
+  color: $white;
+  background-color: $brand-blue;
+  padding: 18px;
+}

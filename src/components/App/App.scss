@@ -3,3 +3,7 @@
 h1 {
   @include font-h1();
 }
+
+.App {
+  overflow: hidden;
+}

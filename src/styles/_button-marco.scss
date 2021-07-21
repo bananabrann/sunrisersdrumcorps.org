@@ -1,0 +1,100 @@
+/*
+  NOTE
+  This button styling was done by Marco Fugaro, June 19th, 2015.
+*/
+
+@import "./colors";
+
+$primary-color: $brand-blue;
+$secondary-color: $brand-orange;
+
+
+@mixin marco-button-base() {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0 10px 20px;
+  background-color: $primary-color;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 15px 40px;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $secondary-color;
+  }
+  span {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@mixin marco-button1() {
+  @include marco-button-base();
+
+  transition: background 0.15s, color 0.25s;
+  &:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-origin: center top; // This is the magic
+    transform: scale(1, 0) translateZ(0);
+    transition: all 0.25s ease-out;
+  }
+  &:hover {
+    color: $primary-color;
+
+    &:before {
+      transform: scale(1) translateZ(0);
+    }
+  }
+}
+
+@mixin marco-button2() {
+  @include marco-button-base();
+
+  transition: all 0.4s;
+  &:before {
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 0;
+    transform: translate3d(-50%, -50%, 0) rotate(45deg);
+    transition: all 0.45s;
+  }
+  &:hover {
+    color: $primary-color;
+    &:before {
+      height: 400%;
+    }
+  }
+}
+
+@mixin marco-button3() {
+  @include marco-button-base();
+
+  transition: all 0.25s;
+  &:before {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200%;
+    transform-origin: -10% 100%;
+    transform: rotate(-45deg) translate3d(-25%, 0, 0);
+    transition: all 0.25s;
+  }
+  &:hover {
+    color: $primary-color;
+    &:before {
+      transform: rotate(0deg) translate3d(-25%, 0, 0);
+    }
+  }
+}
+
