@@ -1,0 +1,149 @@
+@import "../../styles/colors";
+@import "../../styles/styles";
+@import "../../styles/button-marco";
+
+.Home {
+  background-color: $white;
+
+  .join-button {
+    @include marco-button2();
+    // FIXME - Text disappears on hover.
+  }
+
+  .hero {
+    height: 100vh;
+    background-color: $white;
+    background-image: url("../../res/img/home-splash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .content {
+      * {
+        max-width: 480px;
+
+      }
+    }
+  }
+
+  
+}
+
+
+// -------------
+
+.btn {
+  font-family: "Lato";
+  text-transform: uppercase;
+  font-weight: 300;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 3px solid #333;
+  padding: 6px 12px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.btn:hover,
+button:hover {
+  outline: 0;
+  color: #fff;
+}
+.btn:active,
+button:active {
+  outline: 0;
+  color: #fff;
+}
+.btn-slide-left {
+  background: linear-gradient(to left, transparent 50%, #333 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.btn-slide-left:hover {
+  background-position: left bottom;
+}
+
+.btn-slide-right {
+  background: linear-gradient(to right, transparent 50%, #333 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+}
+.btn-slide-right:hover {
+  background-position: right bottom;
+}
+
+.btn-slide-up {
+  background: linear-gradient(to bottom, transparent 50%, #333 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+}
+.btn-slide-up:hover {
+  background-position: right bottom;
+}
+
+.btn-slide-down {
+  background: linear-gradient(to bottom, #333 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: left bottom;
+}
+.btn-slide-down:hover {
+  background-position: right top;
+}
+
+.btn-save {
+  padding: 0.7em 1.5em;
+  border: none;
+  color: #fff;
+  background: linear-gradient(to bottom, #2980b9 50%, #3498db 50%);
+  background-size: 100% 200%;
+  background-position: left bottom;
+}
+.btn-save:hover {
+  background-position: right top;
+}
+
+.btn-cancel {
+  padding: 0.7em 1.5em;
+  border: none;
+  color: #fff;
+  background: linear-gradient(to bottom, #e74c3c 50%, #c0392b 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+}
+.btn-cancel:hover {
+  background-position: right bottom;
+}
+
+.btn-cont {
+  padding: 0.7em 1.5em;
+  border: none;
+  color: #fff;
+  background: linear-gradient(to left, #2ecc71 50%, #27ae60 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.btn-cont:hover {
+  background-position: left bottom;
+}
+
+.btn-back {
+  padding: 0.7em 1.5em;
+  border: none;
+  color: #fff;
+  background: linear-gradient(to right, #95a5a6 50%, #7f8c8d 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+}
+.btn-back:hover {
+  background-position: right bottom;
+}
+
+.btn-reg {
+  padding: 0.7em 1.5em;
+  border: none;
+  color: #fff;
+  background: #ff6633;
+  box-shadow: inset 0 0 0 0 #ff6633;
+}
+.btn-reg:hover {
+  box-shadow: inset 0 0 0 50px #dd4411;
+}
