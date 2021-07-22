@@ -1,3 +1,11 @@
-$brand_orange: #F06C21;
-$brand_blue: #0A0F94;
+/*
+    SECTION - Static colors
+*/
+$brand-orange: #f06c21;
+$brand-blue: #0a0f94;
 $white: #f7f7f7;
+
+/*
+  SECTION - Gradients
+*/
+$brand-orange-gradient: radial-gradient(at bottom left, $brand-orange 35%, #e8aa87 100%);

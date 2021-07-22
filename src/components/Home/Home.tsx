@@ -1,20 +1,28 @@
 import React from "react";
-import Logo from "../../res/img/logo.png";
 import "./Home.scss";
 
-interface IHomeProps {
-}
+interface IHomeProps {}
 
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   return (
     <div className="Home">
       <div className="hero">
+        {/* 
+        TODO -
+        Add content and design
+      */}
+      </div>
+
+      <div className="bonus-area">
         <div className="content">
-          <img src={Logo} alt="The Sunrisers' logo" />
-          <a href="#" className="join-button">Join</a>
+          <h3>Bonus Area</h3>
+          <p>
+            Bonus area is great for including snippets of stuff. Though
+            preferably text, this can ulatimately be anything you would like.
+          </p>
+          <div className="do-more">Do More!</div>
         </div>
       </div>
-      <div className="test">Hi</div>
     </div>
   );
 };

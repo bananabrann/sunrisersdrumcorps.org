@@ -3,8 +3,6 @@
 @import "../../styles/button-marco";
 
 .Home {
-  background-color: $white;
-
   .join-button {
     @include marco-button2();
     // FIXME - Text disappears on hover.
@@ -12,16 +10,32 @@
 
   .hero {
     height: 100vh;
-    background-color: $white;
-    background-image: url("../../res/img/home-splash.png");
-    background-repeat: no-repeat;
+    width: 100vw;
+
+    // TODO - This is filler background
+    // background-image: url("../../res/img/background-filler.jpg");
+    background-position: center left;
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    // --
+  }
+
+  .bonus-area {
+    @include diagbox($brand-orange-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .content {
-      * {
-        max-width: 480px;
-      }
+      padding: 0 35px;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    .do-more {
+      @include marco-button3($brand-blue, $brand-orange);
     }
   }
 }

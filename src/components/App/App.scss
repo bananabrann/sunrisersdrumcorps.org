@@ -1,9 +1,31 @@
 @import "../../styles/styles";
+@import "../../styles/colors";
 
-h1 {
-  @include font-h1();
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 .App {
   overflow: hidden;
+  background-color: $white;
 }
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+  font-family: "Raleway", "Sans-seriff";
+  font-weight: 900;
+  font-size: 35px; // Override for browser support.
+  font-size: 7vw; // TODO - Add media query for narrow screens.
+  padding: 5px auto;
+}
+
+p {
+  font-family: "Raleway", "sans-serif";
+  font-weight: 400;
+}
+
