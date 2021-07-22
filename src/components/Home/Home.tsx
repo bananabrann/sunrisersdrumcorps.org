@@ -30,6 +30,18 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           <div className="do-more">Do More!</div>
         </div>
       </div>
+
+      <div className="news-area">
+        <div className="content">
+          <h3>News</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            qui nemo assumenda vero incidunt voluptatibus, sequi corrupti magnam
+            porro saepe nesciunt debitis omnis quae quasi ducimus molestiae
+            facilis tempora! Ipsa!
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
