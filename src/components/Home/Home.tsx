@@ -1,5 +1,6 @@
 import React from "react";
 import NewsTile from "../NewsTile/NewsTile";
+import Footer from "../Footer/Footer";
 import "./Home.scss";
 
 interface IHomeProps {}
@@ -72,6 +73,8 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

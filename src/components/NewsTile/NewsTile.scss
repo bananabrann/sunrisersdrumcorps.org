@@ -11,7 +11,7 @@
   border-radius: 19px;
   background: radial-gradient(
     at top left,
-    rgba(210, 107, 245, 0.494) 0%,
+    rgba(255, 54, 221, 0.405) 0%,
     rgba(93, 100, 111, 0.316) 100%
   );
   // max-width: 500px;
@@ -23,7 +23,8 @@
   }
 
   &:hover {
-    transform: rotate(2.5deg);
+    // transform: rotate(2.5deg);
+    transform: scale(1.05);
     transition: ease-out 170ms;
     i {
       transform: scale(2.15);
