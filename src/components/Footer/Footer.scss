@@ -45,6 +45,12 @@ $breakpoint: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
+        & * + * {
+          margin-top: 10px;
+        }
+        img {
+          filter: brightness(0) invert(1); // Makes PNG white
+        }
         .logo-whiteout {
           width: 132px;
           padding-bottom: 8px;

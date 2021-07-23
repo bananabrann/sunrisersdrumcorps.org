@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import LogoWhiteout from "../../res/img/logo-whiteout.png";
+import LogoWhiteout from "../../res/img/logo-alt.png";
 
 interface IFooterProps {}
 
