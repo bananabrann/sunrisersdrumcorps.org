@@ -1,0 +1,67 @@
+@import "../../styles/colors";
+
+$breakpoint: 500px;
+
+.Footer {
+  background-color: $black;
+  color: $white;
+  position: absolute;
+  width: 100%;
+  // display: flex;
+  // flex-flow: column nowrap;
+
+  .content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    > * {
+      padding: 15px;
+    }
+    p {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+
+    .col {
+      display: flex;
+      flex-flow: column;
+      font-family: serif;
+      &:first-child {
+        p {
+          font-weight: 700;
+        }
+      }
+
+      &:last-child {
+        // Whiteout logo and social media column
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo-whiteout {
+          width: 132px;
+          padding-bottom: 8px;
+        }
+        .social-media > i {
+          margin: auto 5px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $breakpoint) {
+      flex-direction: column;
+    }
+  }
+  .bottom-text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
