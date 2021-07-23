@@ -2,6 +2,8 @@
 @import "../../styles/styles";
 @import "../../styles/button-marco";
 
+$content-max-width: 1080px;
+
 .Home {
   .join-button {
     @include marco-button2();
@@ -24,7 +26,7 @@
     display: flex;
     justify-content: center;
     .content {
-      max-width: 1080px;
+      max-width: $content-max-width
     }
     h3 {
       text-align: center;
@@ -36,12 +38,19 @@
 
   .news-area {
     @include diagbox($brand-blue-gradient);
-    color: $white;
-
+    display: flex;
+    justify-content: center;
     .content {
       display: flex;
-      flex-flow: row wrap;
-
+      flex-flow: column wrap-reverse;
+      color: $white;
+      max-width: $content-max-width;
+      .tiles {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
       h3 {
         right: 0;
         margin: auto 0 auto auto;

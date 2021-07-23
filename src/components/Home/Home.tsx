@@ -1,4 +1,5 @@
 import React from "react";
+import NewsTile from "../NewsTile/NewsTile";
 import "./Home.scss";
 
 interface IHomeProps {}
@@ -40,6 +41,35 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             porro saepe nesciunt debitis omnis quae quasi ducimus molestiae
             facilis tempora! Ipsa!
           </p>
+          <div className="tiles">
+            {/* TODO - Loop through data */}
+            <NewsTile
+              title="Just A Normal Title"
+              body={
+                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi qui nemo assumenda vero incidunt voluptatibus, sequi corrupti magnam porro saepe nesciunt debitis omnis quae quasi ducimus molestiae facilis tempora! Ipsa!"
+              }
+              url="/news/3"
+              date={"01 January 1970 00:00 UTC"}
+            />
+
+            <NewsTile
+              title="Just A Normal Title"
+              body={
+                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi qui nemo assumenda vero incidunt voluptatibus, sequi corrupti magnam porro saepe nesciunt debitis omnis quae quasi ducimus molestiae facilis tempora! Ipsa!"
+              }
+              url="/news/3"
+              date={"01 January 1970 00:00 UTC"}
+            />
+
+            <NewsTile
+              title="Just A Normal Title"
+              body={
+                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi qui nemo assumenda vero incidunt voluptatibus, sequi corrupti magnam porro saepe nesciunt debitis omnis quae quasi ducimus molestiae facilis tempora! Ipsa!"
+              }
+              url="/news/3"
+              date={"01 January 1970 00:00 UTC"}
+            />
+          </div>
         </div>
       </div>
     </div>
