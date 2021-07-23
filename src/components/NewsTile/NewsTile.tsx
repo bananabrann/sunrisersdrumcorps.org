@@ -27,7 +27,7 @@ const NewsTile: React.FC<INewsTileProps> = (props: INewsTileProps) => {
         <i className="fas fa-external-link-alt"></i>
       </div>
       <p className="date">{dateFormat(props.date, "dddd, mmmm dS, yyyy")}</p>
-      <p className="body">{pagnateText(props.body, 135)}</p>
+      <p className="body">{pagnateText(props.body, 180)}</p>
     </div>
   )
 }

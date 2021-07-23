@@ -46,7 +46,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             <NewsTile
               title="Just A Normal Title"
               body={
-                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi qui nemo assumenda vero incidunt voluptatibus, sequi corrupti magnam porro saepe nesciunt debitis omnis quae quasi ducimus molestiae facilis tempora! Ipsa!"
+                "This style can change! How do you like it? Notice the difference in heights. There's a few tidying-up to do, but that's time consuming so I wanted your feedback first."
               }
               url="/news/3"
               date={"01 January 1970 00:00 UTC"}
