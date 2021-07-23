@@ -26,7 +26,7 @@ $content-max-width: 1080px;
     display: flex;
     justify-content: center;
     .content {
-      max-width: $content-max-width
+      max-width: $content-max-width;
     }
     h3 {
       text-align: center;
@@ -40,6 +40,12 @@ $content-max-width: 1080px;
     @include diagbox($brand-blue-gradient);
     display: flex;
     justify-content: center;
+
+    // Manual offset to cover up white space
+    // FIXME - Becomes exposed again at 1954px width
+    padding-bottom: 130px;
+    margin-bottom: -100px;
+    //--
     .content {
       display: flex;
       flex-flow: column wrap-reverse;
