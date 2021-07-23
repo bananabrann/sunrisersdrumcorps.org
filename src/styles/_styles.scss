@@ -1,12 +1,5 @@
 @import "./colors";
-
-@mixin font-h1($size: 4rem) {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  font-size: $size;
-  text-transform: uppercase;
-  color: $brand_orange;
-}
+@import "../../node_modules/sass-math/math";
 
 /*
   SECTION - Buttons
@@ -14,10 +7,7 @@
 
 @mixin button() {
   text-align: center;
-
-
-    cursor: pointer;
-
+  cursor: pointer;
 }
 
 @mixin main-button() {
@@ -28,4 +18,41 @@
   color: $white;
   background-color: $brand-blue;
   padding: 18px;
+}
+
+/*
+  SECTION - Diag box
+*/
+
+@mixin diagbox($color, $degree: -6deg) {
+
+  /*
+    NOTE -
+    Some things must happen in order for the diagonal box to work.
+
+    1) Content that is going inside the slanted areas must have the
+    .content class.
+    2) Don't forget the content height parameter.
+
+    To modify elements of the pseudo element, simply override the
+    property call.
+  */
+  
+  position: relative;
+
+  > .content {
+    // NOTE - See https://codepen.io/enbee81/pen/yLyrmyg for more information.
+    padding: tan($degree * (100vw / -2)) + 20 + px;
+    position: relative;
+  }
+
+  
+  &::before {
+    content: "";
+    position: absolute;
+    background: $color;
+    height: 100%;
+    width: 100%;
+    transform: skewY($degree);
+  }
 }

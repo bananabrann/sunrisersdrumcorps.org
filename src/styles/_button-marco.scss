@@ -5,16 +5,11 @@
 
 @import "./colors";
 
-$primary-color: $brand-blue;
-$secondary-color: $brand-orange;
-
-
-@mixin marco-button-base() {
+@mixin marco-button-base($color-first, $color-second) {
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   display: inline-block;
-  margin: 0 10px 20px;
-  background-color: $primary-color;
+  background-color: $color-first;
   color: $white;
   text-transform: uppercase;
   font-size: 22px;
@@ -22,12 +17,13 @@ $secondary-color: $brand-orange;
   padding: 15px 40px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 
   &:before {
     content: "";
     display: block;
     position: absolute;
-    background-color: $secondary-color;
+    background-color: $color-second;
   }
   span {
     position: relative;
@@ -35,8 +31,8 @@ $secondary-color: $brand-orange;
   }
 }
 
-@mixin marco-button1() {
-  @include marco-button-base();
+@mixin marco-button1($color-first: $brand-blue, $color-second: $brand-orange) {
+  @include marco-button-base($color-first, $color-second);
 
   transition: background 0.15s, color 0.25s;
   &:before {
@@ -49,7 +45,7 @@ $secondary-color: $brand-orange;
     transition: all 0.25s ease-out;
   }
   &:hover {
-    color: $primary-color;
+    color: $color-first;
 
     &:before {
       transform: scale(1) translateZ(0);
@@ -57,8 +53,8 @@ $secondary-color: $brand-orange;
   }
 }
 
-@mixin marco-button2() {
-  @include marco-button-base();
+@mixin marco-button2($color-first: $brand-blue, $color-second: $brand-orange) {
+  @include marco-button-base($color-first, $color-second);
 
   transition: all 0.4s;
   &:before {
@@ -70,15 +66,15 @@ $secondary-color: $brand-orange;
     transition: all 0.45s;
   }
   &:hover {
-    color: $primary-color;
+    color: $color-first;
     &:before {
       height: 400%;
     }
   }
 }
 
-@mixin marco-button3() {
-  @include marco-button-base();
+@mixin marco-button3($color-first: $brand-blue, $color-second: $brand-orange) {
+  @include marco-button-base($color-first, $color-second);
 
   transition: all 0.25s;
   &:before {
@@ -91,7 +87,8 @@ $secondary-color: $brand-orange;
     transition: all 0.25s;
   }
   &:hover {
-    color: $primary-color;
+    // color: $color-first;
+    color: white;
     &:before {
       transform: rotate(0deg) translate3d(-25%, 0, 0);
     }
