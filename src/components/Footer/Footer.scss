@@ -5,10 +5,8 @@ $breakpoint: 500px;
 .Footer {
   background-color: $black;
   color: $white;
-  position: absolute;
+  position: relative;
   width: 100%;
-  // display: flex;
-  // flex-flow: column nowrap;
 
   .content {
     display: flex;

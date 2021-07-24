@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.scss";
 import LogoWhiteout from "../../res/img/logo-alt.png";
 
@@ -11,7 +12,13 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
         <div className="links">
           <div className="col">
             <p>Join the Sunrisers</p>
+            
+            <Link
+              to={"/schedule"}
+            >
             <p>View schedule</p>
+            
+            </Link>
             <p>Donate/Support</p>
           </div>
           <div className="col">
