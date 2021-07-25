@@ -1,11 +1,15 @@
 import express from "express";
+const newsRoute = require("./routes/news.ts");
 
-const app = express();
+const app: express.Application = express();
 
 app.get("/", (req, res) => {
-  res.send("Well done!");
+  res.status(200).send("API is ready.");
 });
 
-app.listen(3000, () => {
-  console.log("The application is listening on port 3000!");
+app.use("/api/news", newsRoute);
+
+const PORT: string | number = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}!`);
 });
