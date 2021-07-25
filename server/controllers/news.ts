@@ -5,5 +5,5 @@ module.exports.getAllNews = async (
   res: Response
 ): Promise<void> => {
   console.log("Yo!");
-  res.status(200).send({message: "Hey, we're working!"});
+  res.status(200).send({message: "Houston, we don't have a problem!"});
 };

@@ -18,8 +18,7 @@
   },
   "scripts": {
     "start": " node .",
-    "build": "tsc --project ./",
-    "webpackbuild": "webpack",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
