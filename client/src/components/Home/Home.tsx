@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import NewsTile from "../NewsTile/NewsTile";
 import Footer from "../Footer/Footer";
 import "./Home.scss";
@@ -35,7 +36,12 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 
       <div className="news-area">
         <div className="content">
-          <h3>News</h3>
+          <Link to="/news">
+            <h3>News</h3>
+            <h3 className="see-all-news">
+              See All News <i className="fas fa-chevron-right" />
+            </h3>
+          </Link>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
             qui nemo assumenda vero incidunt voluptatibus, sequi corrupti magnam
