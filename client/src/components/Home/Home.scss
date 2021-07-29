@@ -46,6 +46,10 @@ $content-max-width: 1080px;
     padding-bottom: 130px;
     margin-bottom: -100px;
     //--
+    .see-all-news {
+      font-size: 1rem;
+      font-weight: 600;
+    }
     .content {
       display: flex;
       flex-flow: column wrap-reverse;
@@ -57,9 +61,17 @@ $content-max-width: 1080px;
         justify-content: space-between;
         align-items: flex-start;
       }
+      a,
       h3 {
         right: 0;
         margin: auto 0 auto auto;
+        transition: ease-in-out 150ms all;
+        &:hover {
+          color: $brand-orange;
+          transition: ease-in-out 150ms all;
+        }
+      }
+      a {
       }
     }
   }
