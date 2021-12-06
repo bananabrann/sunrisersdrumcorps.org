@@ -4,75 +4,154 @@
 
 $content-max-width: 1080px;
 
-.Home {
-  .join-button {
-    @include marco-button2();
-    // FIXME - Text disappears on hover.
+#text-logo {
+  display: flex;
+  margin: 25px auto 0;
+  z-index: 2;
+  width: 90%;
+}
+
+#sun-logo {
+  z-index: 1; // Redundant value
+  position: absolute;
+  margin-left: -50vw;
+  margin-right: 50vw;
+  left: -50px;
+
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  @-ms-keyframes spin {
+    from {
+      -ms-transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+    }
   }
+  @-moz-keyframes spin {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.Home {
+button {
+  @include marco-button3($brand-blue, $brand-orange);
+}
 
   .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px;
     height: 100vh;
-
-    // TODO - This is filler background
-    // background-image: url("../../res/img/background-filler.jpg");
-    background-position: center left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    // --
   }
 
-  .bonus-area {
-    @include diagbox($brand-orange-gradient);
-    display: flex;
-    justify-content: center;
-    .content {
-      max-width: $content-max-width;
-    }
-    h3 {
-      text-align: center;
-    }
-    .do-more {
-      @include marco-button3($brand-blue, $brand-orange);
-    }
-  }
+  // .join-button {
+  //   @include marco-button2();
+  //   // FIXME - Text disappears on hover.
+  // }
 
-  .news-area {
-    @include diagbox($brand-blue-gradient);
-    display: flex;
-    justify-content: center;
+  //   .hero {
+  //     height: 100vh;
 
-    // Manual offset to cover up white space
-    // FIXME - Becomes exposed again at 1954px width
-    padding-bottom: 130px;
-    margin-bottom: -100px;
-    //--
-    .see-all-news {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-    .content {
-      display: flex;
-      flex-flow: column wrap-reverse;
-      color: $white;
-      max-width: $content-max-width;
-      .tiles {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-      }
-      a,
-      h3 {
-        right: 0;
-        margin: auto 0 auto auto;
-        transition: ease-in-out 150ms all;
-        &:hover {
-          color: $brand-orange;
-          transition: ease-in-out 150ms all;
-        }
-      }
-      a {
-      }
-    }
-  }
+  //     // TODO - This is filler background
+  //     // background-image: url("../../res/img/background-filler.jpg");
+  //     background-position: center left;
+  //     background-size: cover;
+  //     background-repeat: no-repeat;
+  //     // --
+  //   }
+
+  //   .bonus-area {
+  //     @include diagbox($brand-orange-gradient);
+  //     display: flex;
+  //     justify-content: center;
+  //     .content {
+  //       max-width: $content-max-width;
+  //     }
+  //     h3 {
+  //       text-align: center;
+  //     }
+  //     .do-more {
+  //       @include marco-button3($brand-blue, $brand-orange);
+  //     }
+  //   }
+
+  //   .news-area {
+  //     @include diagbox($brand-blue-gradient);
+  //     display: flex;
+  //     justify-content: center;
+
+  //     // Manual offset to cover up white space
+  //     // FIXME - Becomes exposed again at 1954px width
+  //     padding-bottom: 130px;
+  //     margin-bottom: -100px;
+  //     //--
+  //     .see-all-news {
+  //       font-size: 1rem;
+  //       font-weight: 600;
+  //     }
+  //     .content {
+  //       display: flex;
+  //       flex-flow: column wrap-reverse;
+  //       color: $white;
+  //       max-width: $content-max-width;
+  //       .tiles {
+  //         display: flex;
+  //         flex-flow: row wrap;
+  //         justify-content: space-between;
+  //         align-items: flex-start;
+  //       }
+  //       a,
+  //       h3 {
+  //         right: 0;
+  //         margin: auto 0 auto auto;
+  //         transition: ease-in-out 150ms all;
+  //         &:hover {
+  //           color: $brand-orange;
+  //           transition: ease-in-out 150ms all;
+  //         }
+  //       }
+  //       a {
+  //       }
+  //     }
+  //   }
 }

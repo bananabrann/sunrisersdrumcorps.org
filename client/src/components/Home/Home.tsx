@@ -1,21 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar"
 import NewsTile from "../NewsTile/NewsTile";
 import Footer from "../Footer/Footer";
 import "./Home.scss";
+import svgSunrisersCursive from "../../res/svg/logo-text.svg";
+import svgSunlogo from "../../res/svg/logo-sun.svg";
 
 interface IHomeProps {}
 
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   return (
     <div className="Home">
+      {/* <Navbar /> */}
       <div className="hero">
-        {/* 
-        TODO -
-        Add content and design
-      */}
-      </div>
 
+      <img src={svgSunrisersCursive} alt="" id="text-logo" />
+
+      {/* <div className="buttons-container">
+        <p>Join</p>
+      <button className="">hi</button>
+      </div> */}
+
+
+
+
+      <img src={svgSunlogo} alt="" id="sun-logo" />
+
+
+      </div>
+      {/* <img src={svgSunrisersCursive} /> */}
+
+{/* 
       <div className="bonus-area">
         <div className="content">
           <h3>Bonus Area</h3>
@@ -49,7 +65,6 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             facilis tempora! Ipsa!
           </p>
           <div className="tiles">
-            {/* TODO - Loop through data */}
             <NewsTile
               title="Just A Normal Title"
               body={
@@ -79,8 +94,10 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           </div>
         </div>
       </div>
+*/}
 
-      <Footer />
+
+      {/* <Footer /> */}
     </div>
   );
 };

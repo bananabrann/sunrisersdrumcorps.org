@@ -1,0 +1,14 @@
+@import "../../styles/colors";
+
+.Navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    // best seen at 1500px or less
+    .curved {
+        background: $brand-orange-gradient;
+        height: 5vh;
+        border-bottom-left-radius: 50% 9%;
+        border-bottom-right-radius: 50% 9%;
+      }
+}
