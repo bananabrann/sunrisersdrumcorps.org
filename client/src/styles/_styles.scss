@@ -25,7 +25,6 @@
 */
 
 @mixin diagbox($color, $degree: -6deg) {
-
   /*
     NOTE -
     Some things must happen in order for the diagonal box to work.
@@ -37,7 +36,7 @@
     To modify elements of the pseudo element, simply override the
     property call.
   */
-  
+
   position: relative;
 
   > .content {
@@ -46,7 +45,6 @@
     position: relative;
   }
 
-  
   &::before {
     content: "";
     position: absolute;

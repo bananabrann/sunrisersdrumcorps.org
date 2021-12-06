@@ -35,17 +35,17 @@
     align-items: center;
     p {
       text-transform: uppercase;
-      font-family: 'Roboto', sans-serif;
-    font-weight: 500;    }
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+    }
   }
-  
+
   .top {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-start;
     p {
-      
     }
     .title {
       font-size: 26px;
@@ -56,6 +56,5 @@
   .body {
     // font-family: 'Merriweather', serif;
     font-weight: 300;
-
   }
 }
