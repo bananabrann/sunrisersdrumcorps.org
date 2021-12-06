@@ -6,7 +6,7 @@ $content-max-width: 1080px;
 
 #text-logo {
   display: flex;
-  margin: 25px auto 0;
+  margin: 45px auto 0;
   z-index: 2;
   width: 90%;
 }
@@ -71,9 +71,9 @@ $content-max-width: 1080px;
 }
 
 .Home {
-button {
-  @include marco-button3($brand-blue, $brand-orange);
-}
+// button {
+//   @include marco-button3($brand-blue, $brand-orange);
+// }
 
   .hero {
     display: flex;
@@ -82,6 +82,16 @@ button {
     align-items: center;
     padding: 12px;
     height: 100vh;
+
+    .selection-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: lightcoral;
+      max-width: 50%;
+      margin-left: auto;
+
+    }
   }
 
   // .join-button {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar/Navbar"
+import Navbar from "../Navbar/Navbar";
 import NewsTile from "../NewsTile/NewsTile";
 import Footer from "../Footer/Footer";
 import "./Home.scss";
@@ -13,25 +13,31 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   return (
     <div className="Home">
       {/* <Navbar /> */}
+      <Navbar />
       <div className="hero">
+        <img src={svgSunrisersCursive} alt="" id="text-logo" />
 
-      <img src={svgSunrisersCursive} alt="" id="text-logo" />
-
-      {/* <div className="buttons-container">
+        {/* <div className="buttons-container">
         <p>Join</p>
       <button className="">hi</button>
       </div> */}
 
+        <div className="selection-area">
+          <button>Join!</button>
+          <button>Schedule</button>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+            dolorum quidem neque blanditiis corporis in sapiente totam rerum
+            nihil sit. Voluptas culpa aliquam quasi ut optio sapiente placeat,
+            alias dignissimos!
+          </p>
+        </div>
 
-
-
-      <img src={svgSunlogo} alt="" id="sun-logo" />
-
-
+        <img src={svgSunlogo} alt="" id="sun-logo" />
       </div>
       {/* <img src={svgSunrisersCursive} /> */}
 
-{/* 
+      {/* 
       <div className="bonus-area">
         <div className="content">
           <h3>Bonus Area</h3>
@@ -95,7 +101,6 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
         </div>
       </div>
 */}
-
 
       {/* <Footer /> */}
     </div>
