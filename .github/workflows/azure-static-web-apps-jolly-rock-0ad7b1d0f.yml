@@ -22,11 +22,7 @@ jobs:
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-<<<<<<< HEAD:.github/workflows/azure-static-web-apps-witty-sky-006ca3e0f.yml
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WITTY_SKY_006CA3E0F }}
-=======
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_JOLLY_ROCK_0AD7B1D0F }}
->>>>>>> main:.github/workflows/azure-static-web-apps-jolly-rock-0ad7b1d0f.yml
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
@@ -45,9 +41,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-<<<<<<< HEAD:.github/workflows/azure-static-web-apps-witty-sky-006ca3e0f.yml
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WITTY_SKY_006CA3E0F }}
-=======
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_JOLLY_ROCK_0AD7B1D0F }}
->>>>>>> main:.github/workflows/azure-static-web-apps-jolly-rock-0ad7b1d0f.yml
           action: "close"
