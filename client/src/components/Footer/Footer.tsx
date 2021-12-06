@@ -12,12 +12,9 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
         <div className="links">
           <div className="col">
             <p>Join the Sunrisers</p>
-            
-            <Link
-              to={"/schedule"}
-            >
-            <p>View schedule</p>
-            
+
+            <Link to={"/schedule"}>
+              <p>View schedule</p>
             </Link>
             <p>Donate/Support</p>
           </div>
@@ -41,7 +38,6 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
           <small>(C) 2021, Any Copyright or LIcensing Here</small>
           <small>Design by Lee</small>
         </div>
-
       </div>
     </div>
   );
