@@ -6,7 +6,7 @@ import NewsTile from "../NewsTile/NewsTile";
 import "./Home.scss";
 import svgSunrisersCursive from "../../res/svg/logo-text.svg";
 import svgSunlogo from "../../res/svg/logo-sun.svg";
-import { ReactComponent as PardesCTAButton } from "../../res/svg/button.svg";
+import { ReactComponent as PardesCTAButton } from "../../res/svg/pardes-button.svg";
 
 interface IHomeProps {}
 
