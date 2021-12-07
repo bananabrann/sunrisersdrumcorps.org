@@ -1,30 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import NewsTile from "../NewsTile/NewsTile";
-import Footer from "../Footer/Footer";
 import "./Home.scss";
 import svgSunrisersCursive from "../../res/svg/logo-text.svg";
 import svgSunlogo from "../../res/svg/logo-sun.svg";
+import { ReactComponent as PardesCTAButton } from "../../res/svg/button.svg";
 
 interface IHomeProps {}
 
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   return (
     <div className="Home">
-      {/* <Navbar /> */}
       <Navbar />
       <div className="hero">
         <img src={svgSunrisersCursive} alt="" id="text-logo" />
 
-        {/* <div className="buttons-container">
-        <p>Join</p>
-      <button className="">hi</button>
-      </div> */}
-
         <div className="selection-area">
-          <button>Join!</button>
-          <button>Schedule</button>
+          <div className="pardes-button">
+            <a className="cta" href="#">
+              <span>JOIN</span>
+              <span>
+                <PardesCTAButton />
+              </span>
+            </a>
+          </div>
+
+          <br />
+
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
             dolorum quidem neque blanditiis corporis in sapiente totam rerum
@@ -35,7 +39,6 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 
         <img src={svgSunlogo} alt="" id="sun-logo" />
       </div>
-      {/* <img src={svgSunrisersCursive} /> */}
 
       {/* 
       <div className="bonus-area">

@@ -1,6 +1,7 @@
 @import "../../styles/colors";
 @import "../../styles/styles";
 @import "../../styles/button-marco";
+@import "../../styles/button-padras-cta";
 
 $content-max-width: 1080px;
 
@@ -32,7 +33,7 @@ $content-max-width: 1080px;
   -ms-animation-timing-function: linear;
 
   animation-name: spin;
-  animation-duration: 120s;
+  animation-duration: 160s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 
@@ -75,6 +76,11 @@ $content-max-width: 1080px;
 //   @include marco-button3($brand-blue, $brand-orange);
 // }
 
+.pardes-button {
+  @include pardes-cta-button();
+}
+
+
   .hero {
     display: flex;
     flex-direction: column;
@@ -87,12 +93,18 @@ $content-max-width: 1080px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background-color: lightcoral;
+      // background-color: lightcoral;
       max-width: 50%;
       margin-left: auto;
 
     }
   }
+
+
+
+  // Commeneted out while working on various parts of the site
+
+
 
   // .join-button {
   //   @include marco-button2();
