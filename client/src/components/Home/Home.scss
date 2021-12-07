@@ -72,9 +72,9 @@ $content-max-width: 1080px;
 }
 
 .Home {
-// button {
-//   @include marco-button3($brand-blue, $brand-orange);
-// }
+  // button {
+  //   @include marco-button3($brand-blue, $brand-orange);
+  // }
 
 .pardes-button {
   @include pardes-cta-button();
@@ -96,7 +96,6 @@ $content-max-width: 1080px;
       // background-color: lightcoral;
       max-width: 50%;
       margin-left: auto;
-
     }
   }
 
