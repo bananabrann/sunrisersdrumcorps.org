@@ -20,10 +20,15 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
         <div className="selection-area">
           <div className="pardes-button">
             <a className="cta" href="#">
-              <span>JOIN</span>
-              <span>
-                <PardesCTAButton />
+              <span className="cta-row">
+                <span>JOIN</span>
+                <span>
+                  <PardesCTAButton />
+                </span>
               </span>
+              <div className="cta-row">
+                <p className="cta-subtext">Request an audition package</p>
+              </div>
             </a>
           </div>
 
@@ -39,6 +44,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 
         <img src={svgSunlogo} alt="" id="sun-logo" />
       </div>
+      <Footer />
 
       {/* 
       <div className="bonus-area">
@@ -105,7 +111,6 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
       </div>
 */}
 
-      {/* <Footer /> */}
     </div>
   );
 };
