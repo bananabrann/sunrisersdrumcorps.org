@@ -110,7 +110,6 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
         </div>
       </div>
 */}
-
     </div>
   );
 };
