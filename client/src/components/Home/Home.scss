@@ -1,5 +1,6 @@
 @import "../../styles/colors";
 @import "../../styles/styles";
+@import "../../styles/button-generic";
 @import "../../styles/button-marco";
 @import "../../styles/button-padras-cta";
 
@@ -92,9 +93,21 @@ $content-max-width: 1080px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       // background-color: lightcoral;
       max-width: 50%;
       margin-left: auto;
+
+      button {
+        @include button-generic($force-width: 40%);
+        margin: 5px;
+      }
+
+      .little-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
     }
   }
 

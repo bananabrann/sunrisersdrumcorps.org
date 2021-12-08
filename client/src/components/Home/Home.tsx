@@ -14,6 +14,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   return (
     <div className="Home">
       <Navbar />
+
       <div className="hero">
         <img src={svgSunrisersCursive} alt="" id="text-logo" />
 
@@ -33,6 +34,21 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           </div>
 
           <br />
+
+          <div className="little-links">
+            <button>
+              <i className="fas fa-calendar"></i> Schedule
+            </button>
+            <button>
+              <i className="fas fa-user"></i>Staff
+            </button>
+            <button>
+              <i className="fas fa-shopping-cart"></i>Merch
+            </button>
+            <button>
+              <i className="fas fa-heart"></i>Donate
+            </button>
+          </div>
 
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
