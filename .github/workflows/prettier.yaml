@@ -2,9 +2,9 @@ name: Prettier Enforcement
 
 on:
   pull_request:
-  push:
     branches:
       - main
+      - dev
 
 jobs:
   prettier:
@@ -14,7 +14,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.head_ref }}
 
       - name: Prettify code
