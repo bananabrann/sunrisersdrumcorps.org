@@ -5,6 +5,8 @@
 @import "../../styles/button-padras-cta";
 
 $content-max-width: 1080px;
+$small-desktop-breakpoint: 894px;
+$mobile-breakpoint: 712px;
 
 #text-logo {
   display: flex;
@@ -73,10 +75,6 @@ $content-max-width: 1080px;
 }
 
 .Home {
-  // button {
-  //   @include marco-button3($brand-blue, $brand-orange);
-  // }
-
   .pardes-button {
     @include pardes-cta-button();
   }
@@ -94,19 +92,25 @@ $content-max-width: 1080px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      // background-color: lightcoral;
-      max-width: 50%;
+      max-width: 622px;
+      width: 45vw;
+      margin-right: 4%;
       margin-left: auto;
 
       button {
         @include button-generic($force-width: 40%);
         margin: 5px;
+        flex-grow: 1;
       }
-
+      
       .little-links {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
+        button {
+          flex-basis: 200px;
+        }
       }
     }
   }
