@@ -133,58 +133,58 @@ $mobile-breakpoint: 712px;
   //     // --
   //   }
 
-  //   .bonus-area {
-  //     @include diagbox($brand-orange-gradient);
-  //     display: flex;
-  //     justify-content: center;
-  //     .content {
-  //       max-width: $content-max-width;
-  //     }
-  //     h3 {
-  //       text-align: center;
-  //     }
-  //     .do-more {
-  //       @include marco-button3($brand-blue, $brand-orange);
-  //     }
-  //   }
+    .bonus-area {
+      @include diagbox($brand-orange-gradient);
+      display: flex;
+      justify-content: center;
+      .content {
+        max-width: $content-max-width;
+      }
+      h3 {
+        text-align: center;
+      }
+      .do-more {
+        @include marco-button3($brand-blue, $brand-orange);
+      }
+    }
 
-  //   .news-area {
-  //     @include diagbox($brand-blue-gradient);
-  //     display: flex;
-  //     justify-content: center;
+    .news-area {
+      @include diagbox($brand-blue-gradient);
+      display: flex;
+      justify-content: center;
 
-  //     // Manual offset to cover up white space
-  //     // FIXME - Becomes exposed again at 1954px width
-  //     padding-bottom: 130px;
-  //     margin-bottom: -100px;
-  //     //--
-  //     .see-all-news {
-  //       font-size: 1rem;
-  //       font-weight: 600;
-  //     }
-  //     .content {
-  //       display: flex;
-  //       flex-flow: column wrap-reverse;
-  //       color: $white;
-  //       max-width: $content-max-width;
-  //       .tiles {
-  //         display: flex;
-  //         flex-flow: row wrap;
-  //         justify-content: space-between;
-  //         align-items: flex-start;
-  //       }
-  //       a,
-  //       h3 {
-  //         right: 0;
-  //         margin: auto 0 auto auto;
-  //         transition: ease-in-out 150ms all;
-  //         &:hover {
-  //           color: $brand-orange;
-  //           transition: ease-in-out 150ms all;
-  //         }
-  //       }
-  //       a {
-  //       }
-  //     }
-  //   }
+      // Manual offset to cover up white space
+      // FIXME - Becomes exposed again at 1954px width
+      padding-bottom: 130px;
+      margin-bottom: -100px;
+      //--
+      .see-all-news {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .content {
+        display: flex;
+        flex-flow: column wrap-reverse;
+        color: $white;
+        max-width: $content-max-width;
+        .tiles {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+        a,
+        h3 {
+          right: 0;
+          margin: auto 0 auto auto;
+          transition: ease-in-out 150ms all;
+          &:hover {
+            color: $brand-orange;
+            transition: ease-in-out 150ms all;
+          }
+        }
+        a {
+        }
+      }
+    }
 }

@@ -63,14 +63,15 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             alias dignissimos!
           </p>
 
-          <img src="https://via.placeholder.com/500x450?text=Small+photo+gallery+or+text+content" alt="" />
+          <img
+            src="https://via.placeholder.com/500x450?text=Small+photo+gallery+or+text+content"
+            alt=""
+          />
         </div>
 
         <img src={svgSunlogo} alt="" id="sun-logo" />
       </div>
-      <Footer />
 
-      {/* 
       <div className="bonus-area">
         <div className="content">
           <h3>Bonus Area</h3>
@@ -133,7 +134,8 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           </div>
         </div>
       </div>
-*/}
+
+      <Footer />
     </div>
   );
 };
