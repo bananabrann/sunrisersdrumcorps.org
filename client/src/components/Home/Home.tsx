@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import NewsTile from "../NewsTile/NewsTile";
+import NoticeBanner from "../NoticeBanner/NoticeBanner";
 import "./Home.scss";
 import svgSunrisersCursive from "../../res/svg/logo-text.svg";
 import svgSunlogo from "../../res/svg/logo-sun.svg";
@@ -13,6 +14,11 @@ interface IHomeProps {}
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   return (
     <div className="Home">
+      <NoticeBanner
+        isVisible={true}
+        textContent="Development website, not for release!"
+      />
+
       <Navbar />
 
       <div className="hero">
@@ -56,6 +62,8 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             nihil sit. Voluptas culpa aliquam quasi ut optio sapiente placeat,
             alias dignissimos!
           </p>
+
+          <img src="https://via.placeholder.com/500x450?text=Small+photo+gallery+or+text+content" alt="" />
         </div>
 
         <img src={svgSunlogo} alt="" id="sun-logo" />
