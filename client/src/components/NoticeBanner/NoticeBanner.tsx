@@ -15,12 +15,13 @@ const NoticeBanner: React.FC<INoticeBannerProps> = (
 
   useEffect(() => {
     console.log(props.textContent);
-    
 
     // If the text content is empty, don't display.
     if (props.isVisible && !props.textContent) {
       // Courtesy text content.
-      console.error("NoticeBanner was meant to be displayed, but no text content was received.");
+      console.error(
+        "NoticeBanner was meant to be displayed, but no text content was received."
+      );
       setTextContent("Text content not set!");
       setIsVisible(false);
     } else {
