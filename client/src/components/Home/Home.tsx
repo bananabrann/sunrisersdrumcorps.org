@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import HomeCarousel from "./HomeCarousel/HomeCarousel";
 import HomePhotoGallery from "./HomePhotoGallery/HomePhotoGallery";
+import MiniUpcomingEvents from "../MiniUpcomingEvents/MiniUpcomingEvents";
 import Navbar from "../Navbar/Navbar";
 import NewsTile from "../NewsTile/NewsTile";
 import NoticeBanner from "../NoticeBanner/NoticeBanner";
@@ -44,6 +45,8 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 
           <br />
 
+          <p>hello</p>
+
           {/* <div className="little-links">
             <button>
               <i className="fas fa-calendar"></i> Schedule
@@ -59,13 +62,9 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             </button>
           </div> */}
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-            dolorum quidem neque blanditiis corporis in sapiente totam rerum
-            nihil sit. Voluptas culpa aliquam quasi ut optio sapiente placeat,
-            alias dignissimos!
-          </p>
+          <MiniUpcomingEvents />
 
+  
           {/* <img
             src="https://via.placeholder.com/500x450?text=Small+photo+gallery+or+text+content"
             alt=""
@@ -75,7 +74,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
         <img src={svgSunlogo} alt="" id="sun-logo" />
       </div>
 
-{/* 
+      {/* 
       <div className="bonus-area">
         <div className="content">
           <h3>Bonus Area</h3>
@@ -93,7 +92,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           <div className="do-more">Do More!</div>
         </div>
       </div> */}
-{/* 
+      {/* 
       <div className="news-area">
         <div className="content">
           <Link to="/news">
@@ -143,7 +142,6 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 
       {/* <HomeCarousel /> */}
       <HomePhotoGallery />
-
 
       <Footer />
     </div>
