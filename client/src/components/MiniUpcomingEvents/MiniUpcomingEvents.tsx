@@ -48,7 +48,9 @@ const MiniUpcomingEvents: React.FC<any> = () => {
       return (
         <div className="event">
           <div className="calendar-date">
-            <p className="month" >{eventDate.format("MMM").toLocaleUpperCase()}</p>
+            <p className="month">
+              {eventDate.format("MMM").toLocaleUpperCase()}
+            </p>
             <p className="day-num">{eventDate.format("D")}</p>
             <p className="day-week">{eventDate.format("dddd")}</p>
           </div>

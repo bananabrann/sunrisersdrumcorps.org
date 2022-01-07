@@ -62,7 +62,6 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 
           <MiniUpcomingEvents />
 
-  
           {/* <img
             src="https://via.placeholder.com/500x450?text=Small+photo+gallery+or+text+content"
             alt=""

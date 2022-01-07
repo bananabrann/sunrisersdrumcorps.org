@@ -21,7 +21,6 @@ const HomeCarousel: React.FC<unknown> = () => {
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
@@ -35,12 +34,8 @@ const HomeCarousel: React.FC<unknown> = () => {
           </div>
         </div>
         <div className="carousel-item">
-          <img
-            className="d-block w-100"
-            src={picture3}
-            alt="Second slide"
-          />
-           <div className="carousel-caption d-none d-md-block">
+          <img className="d-block w-100" src={picture3} alt="Second slide" />
+          <div className="carousel-caption d-none d-md-block">
             <h5>Since 1961</h5>
             <p>
               The whole caption will only show up if the screen is at least
@@ -49,18 +44,10 @@ const HomeCarousel: React.FC<unknown> = () => {
           </div>
         </div>
         <div className="carousel-item">
-          <img
-            className="d-block w-100"
-            src={picture2}
-            alt="Third slide"
-          />
+          <img className="d-block w-100" src={picture2} alt="Third slide" />
         </div>
         <div className="carousel-item">
-          <img
-            className="d-block w-100"
-            src={picture4}
-            alt="Fourth slide"
-          />
+          <img className="d-block w-100" src={picture4} alt="Fourth slide" />
         </div>
       </div>
       <a
