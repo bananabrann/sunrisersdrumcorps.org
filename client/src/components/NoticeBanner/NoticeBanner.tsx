@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./NoticeBanner.scss";
 
 interface INoticeBannerProps {
-  isVisible: boolean;
+  isVisible?: boolean;
   textContent?: string;
 }
 
@@ -11,23 +11,11 @@ const NoticeBanner: React.FC<INoticeBannerProps> = (
 ) => {
   // Default to true because if the component is called, it's probably meant to be displayed.
   const [isVisible, setIsVisible] = useState<boolean>(true);
-  const [textContent, setTextContent] = useState<string | undefined>(props.textContent); // prettier-ignore
+  const [textContent, setTextContent] = useState<string>(props.textContent ?? ""); // prettier-ignore
 
   useEffect(() => {
-    console.log(props.textContent);
-
     // If the text content is empty, don't display.
-    if (props.isVisible && !props.textContent) {
-      // Courtesy text content.
-      console.error(
-        "NoticeBanner was meant to be displayed, but no text content was received."
-      );
-      setTextContent("Text content not set!");
-      setIsVisible(false);
-    } else {
-      setTextContent(props.textContent)
-      //prettier-ignore
-    }
+    !props.textContent ? setIsVisible(false) : setTextContent(props.textContent);
   }, []);
 
   if (isVisible) {
