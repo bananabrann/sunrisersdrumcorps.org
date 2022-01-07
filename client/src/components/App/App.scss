@@ -16,7 +16,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Raleway", "Sans-seriff";
+  font-family: "Sans-seriff";
   font-weight: 900;
   font-size: 30px; // Override for browser support.
   font-size: 6.25vw; // TODO - Add media query for narrow screens.
@@ -26,7 +26,7 @@ h3 {
 p {
   font-family: "Raleway", "sans-serif";
   font-weight: 400;
-  font-size: 18px; // TODO - Add media query for small screens.
+  font-size: 14px; // TODO - Add media query for small screens.
 }
 
 small {
@@ -34,6 +34,6 @@ small {
   font-size: 0.8em;
 }
 
-button {
-  @include button-generic();
-}
+// button {
+//   @include button-generic();
+// }

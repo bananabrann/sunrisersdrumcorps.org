@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import HomeCarousel from "./HomeCarousel/HomeCarousel";
+import HomePhotoGallery from "./HomePhotoGallery/HomePhotoGallery";
 import Navbar from "../Navbar/Navbar";
 import NewsTile from "../NewsTile/NewsTile";
 import NoticeBanner from "../NoticeBanner/NoticeBanner";
 import "./Home.scss";
 import svgSunrisersCursive from "../../res/svg/logo-text.svg";
 import svgSunlogo from "../../res/svg/logo-sun.svg";
+
 import { ReactComponent as PardesCTAButton } from "../../res/svg/pardes-button.svg";
 
 interface IHomeProps {}
@@ -16,7 +19,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
     <div className="Home">
       <NoticeBanner
         isVisible={true}
-        textContent="Development website, not for release!"
+        textContent="Watch out! This is a development site, and is not intended to be shared."
       />
 
       <Navbar />
@@ -41,7 +44,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 
           <br />
 
-          <div className="little-links">
+          {/* <div className="little-links">
             <button>
               <i className="fas fa-calendar"></i> Schedule
             </button>
@@ -54,7 +57,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             <button>
               <i className="fas fa-heart"></i>Donate
             </button>
-          </div>
+          </div> */}
 
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
@@ -63,15 +66,16 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             alias dignissimos!
           </p>
 
-          <img
+          {/* <img
             src="https://via.placeholder.com/500x450?text=Small+photo+gallery+or+text+content"
             alt=""
-          />
+          /> */}
         </div>
 
         <img src={svgSunlogo} alt="" id="sun-logo" />
       </div>
 
+{/* 
       <div className="bonus-area">
         <div className="content">
           <h3>Bonus Area</h3>
@@ -88,8 +92,8 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           </p>
           <div className="do-more">Do More!</div>
         </div>
-      </div>
-
+      </div> */}
+{/* 
       <div className="news-area">
         <div className="content">
           <Link to="/news">
@@ -104,6 +108,8 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             porro saepe nesciunt debitis omnis quae quasi ducimus molestiae
             facilis tempora! Ipsa!
           </p>
+
+
           <div className="tiles">
             <NewsTile
               title="Just A Normal Title"
@@ -133,7 +139,11 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
+
+      {/* <HomeCarousel /> */}
+      <HomePhotoGallery />
+
 
       <Footer />
     </div>

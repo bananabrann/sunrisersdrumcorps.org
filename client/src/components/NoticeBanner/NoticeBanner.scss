@@ -1,9 +1,5 @@
 @import "../../styles/colors";
 
-.NoticeBanner {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  background-color: $black;
-  color: $white;
+.NoticeBanner * {
+margin: 0;
 }

@@ -20,7 +20,7 @@ const NoticeBanner: React.FC<INoticeBannerProps> = (
 
   if (isVisible) {
     return (
-      <div className="NoticeBanner">
+      <div className="NoticeBanner alert alert-info" role="alert">
         <p>{textContent}</p>
       </div>
     );
