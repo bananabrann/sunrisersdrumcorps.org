@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
 import moment, { Moment } from "moment";
+import "./MiniUpcomingEvents.scss";
 
 const calId = "cc2844kp81lfo1oti18hh92h9s@group.calendar.google.com";
 const requestConfigGetEvents: AxiosRequestConfig = {
@@ -47,9 +48,9 @@ const MiniUpcomingEvents: React.FC<any> = () => {
       return (
         <div className="event">
           <div className="calendar-date">
-            <p>{eventDate.format("MMM")}</p>
-            <p>{eventDate.format("D")}</p>
-            <p>{eventDate.format("ddd")}</p>
+            <p className="month" >{eventDate.format("MMM").toLocaleUpperCase()}</p>
+            <p className="day-num">{eventDate.format("D")}</p>
+            <p className="day-week">{eventDate.format("dddd")}</p>
           </div>
 
           <div className="calendar-info">
@@ -57,7 +58,7 @@ const MiniUpcomingEvents: React.FC<any> = () => {
             <a href={event.htmlLink}><h4>{event.summary}</h4></a>
             <p>
               <b>
-                {eventDate.format("h:mm a[,]") ?? ""}{" "}
+                {eventDate.format("h:mma[,]") ?? ""}{" "}
                 {event.location ? event.location + ". " : ""}
               </b>
               {event.description}

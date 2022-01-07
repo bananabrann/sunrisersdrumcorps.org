@@ -45,9 +45,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 
           <br />
 
-          <p>hello</p>
-
-          {/* <div className="little-links">
+          <div className="little-links">
             <button>
               <i className="fas fa-calendar"></i> Schedule
             </button>
@@ -60,7 +58,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             <button>
               <i className="fas fa-heart"></i>Donate
             </button>
-          </div> */}
+          </div>
 
           <MiniUpcomingEvents />
 

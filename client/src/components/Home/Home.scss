@@ -94,7 +94,9 @@ $mobile-breakpoint: 712px;
       align-items: center;
       max-width: 622px;
       width: 45vw;
-      margin-right: 4%;
+      // NOTE -- Top margin is negative here due to the space of the logo
+      margin-top: -40px;
+      margin-right: 6%;
       margin-left: auto;
 
       button {
