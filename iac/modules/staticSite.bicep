@@ -7,7 +7,7 @@ param defaultTags object
 var targetBranch = (env == 'prod') ? 'main' : 'dev'
 var sku = 'Free'
 
-resource clientStaticSite 'Microsoft.Web/staticSites@2021-02-01' ={
+resource clientStaticSite 'Microsoft.Web/staticSites@2021-02-01' = {
   name: '${env}client'
   location: location
   tags: defaultTags

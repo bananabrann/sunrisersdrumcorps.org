@@ -14,17 +14,24 @@ param env string
 @description('Personal access token of an admin for the given repo.')
 param personalAccessToken string
 
-
-
-module clientStaticSite 'modules/staticSite.bicep' = {
-  name: 'clientStaticSite'
+module storageAccount 'modules/storageAccount.bicep' = {
+  name: 'storageAccount'
   params: {
-    env: env
     defaultTags: {}
     location: location
-    repoUrl: repoUrl
-    personalAccessToken: personalAccessToken
+    env: env
   }
 }
 
-output clientStaticSiteHostName string = clientStaticSite.outputs.clientStaticSiteHostName
+// module clientStaticSite 'modules/staticSite.bicep' = {
+//   name: 'clientStaticSite'
+//   params: {
+//     env: env
+//     defaultTags: {}
+//     location: location
+//     repoUrl: repoUrl
+//     personalAccessToken: personalAccessToken
+//   }
+// }
+
+// output clientStaticSiteHostName string = clientStaticSite.outputs.clientStaticSiteHostName
