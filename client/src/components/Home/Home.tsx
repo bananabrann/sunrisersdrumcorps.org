@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import HistorySection from "./HistorySection/HistorySection";
 import HomeCarousel from "./HomeCarousel/HomeCarousel";
 import HomePhotoGallery from "./HomePhotoGallery/HomePhotoGallery";
 import MiniUpcomingEvents from "../MiniUpcomingEvents/MiniUpcomingEvents";
@@ -71,6 +72,8 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 
         <img src={svgSunlogo} alt="" id="sun-logo" />
       </div>
+
+      <HistorySection />
 
       {/* 
       <div className="bonus-area">

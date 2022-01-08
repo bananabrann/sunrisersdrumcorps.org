@@ -9,24 +9,34 @@
   background-color: $white;
 }
 
+/* prettier-ignore */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins";
+  margin: 6px;
+}
+
 h1 {
 }
 
 h2 {
+  font-size: 48px;
 }
 
 h3 {
-  font-family: "Sans-seriff";
   font-weight: 900;
-  font-size: 30px; // Override for browser support.
+  font-size: 30px; // Overload for browser support.
   font-size: 6.25vw; // TODO - Add media query for narrow screens.
   padding: 5px auto;
+}
+
+h4 {
+  font-size: 21px;
 }
 
 p {
   // font-family: "Raleway", "sans-serif";
   font-weight: 400;
-  font-size: 16px; // TODO - Add media query for small screens.
+  font-size: 14px; // TODO - Add media query for small screens.
 }
 
 small {
