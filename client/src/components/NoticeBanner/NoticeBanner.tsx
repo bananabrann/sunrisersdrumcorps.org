@@ -15,7 +15,9 @@ const NoticeBanner: React.FC<INoticeBannerProps> = (
 
   useEffect(() => {
     // If the text content is empty, don't display.
-    !props.textContent ? setIsVisible(false) : setTextContent(props.textContent);
+    !props.textContent
+      ? setIsVisible(false)
+      : setTextContent(props.textContent);
   }, []);
 
   if (isVisible) {
