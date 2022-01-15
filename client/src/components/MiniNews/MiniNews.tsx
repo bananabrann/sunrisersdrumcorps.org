@@ -18,9 +18,9 @@ const MiniNews: React.FC<INewsProps> = (props: INewsProps) => {
 
       return (
         <div className="article">
-          <h3>
+          <h4>
             <Link to={`news/${article.id}`}>{titleTextPaginated}</Link>
-          </h3>
+          </h4>
           <p>{bodyTextPaginated}</p>
         </div>
       );

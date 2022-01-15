@@ -78,6 +78,10 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
         </div>
       </div>
 
+      <br />
+      <br />
+
+
       <div className="container-fluid">
         <HistorySection />
       </div>
