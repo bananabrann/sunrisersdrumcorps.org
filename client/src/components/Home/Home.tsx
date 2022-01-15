@@ -61,8 +61,6 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             </button>
           </div>
 
-          <MiniUpcomingEvents />
-
           {/* <img
             src="https://via.placeholder.com/500x450?text=Small+photo+gallery+or+text+content"
             alt=""
@@ -72,7 +70,18 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
         <img src={svgSunlogo} alt="" id="sun-logo" />
       </div>
 
+      <div>
+        <MiniUpcomingEvents />
+      </div>
+
       <HistorySection />
+
+      {/* FIXME */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
       {/* 
       <div className="bonus-area">

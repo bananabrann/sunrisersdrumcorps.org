@@ -10,17 +10,18 @@ $mobile-breakpoint: 712px;
 
 #text-logo {
   display: flex;
-  margin: 45px auto 0;
+  margin: 45px 0 0 auto;
   z-index: 2;
-  width: 90%;
+  width: 75%;
 }
 
 #sun-logo {
-  z-index: 1; // Redundant value
+  // z-index: 1; // Redundant value
   position: absolute;
   margin-left: -50vw;
   margin-right: 50vw;
   left: -100px;
+  top: -300px;
 
   -webkit-animation-name: spin;
   -webkit-animation-duration: 4000ms;
