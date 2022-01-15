@@ -11,8 +11,9 @@ const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
       <div className="container justify-content-center">
         <div className="alert alert-danger" role="alert">
           <p>
-            Watch out! <b>You're viewing a development build.</b> Some features might not be functioning as expected, or be in a
-            pre-release state. For questions or concerns, please email me.
+            Watch out! <b>You're viewing a development build.</b> Some features
+            might not be functioning as expected, or be in a pre-release state.
+            For questions or concerns, please email me.
           </p>
         </div>
 

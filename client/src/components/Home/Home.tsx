@@ -19,8 +19,6 @@ interface IHomeProps {}
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   return (
     <div className="Home">
-
-
       <Navbar />
 
       <div className="hero">
