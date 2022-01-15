@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import dateFormat from "dateformat";
-import pagnateText from "../../utils";
+import { pagnateText } from "../../utils";
 import "./NewsTile.scss";
 
 interface INewsTileProps {

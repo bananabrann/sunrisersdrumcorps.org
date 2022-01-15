@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
 import moment, { Moment } from "moment";
+import { pagnateText } from "../../utils";
 import "./MiniUpcomingEvents.scss";
 
 const calId = "cc2844kp81lfo1oti18hh92h9s@group.calendar.google.com";
@@ -63,7 +64,7 @@ const MiniUpcomingEvents: React.FC<any> = () => {
                 {eventDate.format("h:mma[,]") ?? ""}{" "}
                 {event.location ? event.location + ". " : ""}
               </b>
-              {event.description}
+              {pagnateText(event.description, 100)}
             </p>
           </div>
         </div>
@@ -97,7 +98,7 @@ const MiniUpcomingEvents: React.FC<any> = () => {
 
   return (
     <div className="MiniUpcomingEvents">
-      <h2>Upcoming Events</h2>
+      <h2>Upcoming</h2>
       <Content />
     </div>
   );

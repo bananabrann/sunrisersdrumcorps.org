@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import HistorySection from "./HistorySection/HistorySection";
 import HomeCarousel from "./HomeCarousel/HomeCarousel";
 import HomePhotoGallery from "./HomePhotoGallery/HomePhotoGallery";
 import MiniUpcomingEvents from "../MiniUpcomingEvents/MiniUpcomingEvents";
 import Navbar from "../Navbar/Navbar";
-import NewsTile from "../NewsTile/NewsTile";
+import MiniNews from "../MiniNews/MiniNews";
 import NoticeBanner from "../NoticeBanner/NoticeBanner";
 import "./Home.scss";
 import svgSunrisersCursive from "../../res/svg/logo-text.svg";
@@ -19,10 +19,7 @@ interface IHomeProps {}
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   return (
     <div className="Home">
-      <NoticeBanner
-        isVisible={true}
-        textContent="Watch out! This is a development site, and is not intended to be shared."
-      />
+
 
       <Navbar />
 
@@ -70,11 +67,20 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
         <img src={svgSunlogo} alt="" id="sun-logo" />
       </div>
 
-      <div>
-        <MiniUpcomingEvents />
+      <div className="container">
+        <div className="row">
+          <div className="col-7">
+            <MiniNews />
+          </div>
+          <div className="col-5">
+            <MiniUpcomingEvents />
+          </div>
+        </div>
       </div>
 
-      <HistorySection />
+      <div className="container-fluid">
+        <HistorySection />
+      </div>
 
       {/* FIXME */}
       <br />

@@ -16,7 +16,7 @@ $mobile-breakpoint: 712px;
 }
 
 #sun-logo {
-  // z-index: 1; // Redundant value
+  z-index: 1;
   position: absolute;
   margin-left: -50vw;
   margin-right: 50vw;
