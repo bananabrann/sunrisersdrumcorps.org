@@ -8,11 +8,30 @@ interface INavbarProps {}
 const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
   return (
     <div className="Navbar">
-      <div className="container justify-content-center">
-        <div className="alert alert-danger" role="alert">
+      <div className="container justify-content-center mt-4">
+        <div
+          className="alert alert-info alert-dismissible fade show"
+          role="alert"
+        >
+          <button
+            type="button"
+            className="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h6 className="alert-heading">Development Website</h6>
           <p>
-            Watch out! <b>You're viewing a development build.</b> Some features might not be functioning as expected, or be in a
-            pre-release state. For questions or concerns, please email me.
+            Watch out! <b>You're viewing a development build.</b> Some features
+            might not be functioning as expected, or be in a pre-release state,
+            where some items are not "polished" yet. This is to save time and
+            money.
+          </p>
+          <hr />
+          <p>
+            Close these notices by clicking the 'X' in the top-right. For
+            questions or concerns, please email me.
           </p>
         </div>
 

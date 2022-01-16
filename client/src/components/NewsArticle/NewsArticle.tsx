@@ -25,6 +25,26 @@ const NewsArticle: React.FC<any> = () => {
     <div className="NewsArticle">
       <Navbar />
 
+      <div className="container">
+        <div
+          className="alert alert-danger alert-dismissible fade show col-12"
+          role="alert"
+        >
+          <button
+            type="button"
+            className="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h6 className="alert-heading">In Development</h6>
+          <p>
+            This page is in development, and is a placeholder for the functionality.
+          </p>
+        </div>
+      </div>
+
       <code>Params as: {params.newsArticleId}</code>
       <h3>{article?.title ?? "Uh-oh, I didn't find that article :("}</h3>
       <p>{article?.body}</p>
