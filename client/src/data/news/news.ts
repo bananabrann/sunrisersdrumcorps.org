@@ -32,7 +32,7 @@ Proident tempor laborum do laboris culpa reprehenderit mollit commodo. Culpa fug
     publishedDate: new Date(),
   },
   {
-    id:"fibbly-squibbly",
+    id: "fibbly-squibbly",
     title: "Fibbly Squibbly to perform Dibbly Libbly",
     body: `
     Anim tempor nostrud sit aute ad est laboris fugiat do consectetur excepteur. Qui non qui labore eiusmod mollit duis deserunt commodo. Sit adipisicing enim exercitation proident exercitation ea eu et cillum nisi officia irure esse quis. Elit adipisicing exercitation cupidatat sit aliquip eiusmod nostrud voluptate cupidatat incididunt.
@@ -45,6 +45,6 @@ Proident tempor laborum do laboris culpa reprehenderit mollit commodo. Culpa fug
 
     Commodo minim pariatur cillum ad commodo esse tempor adipisicing incididunt. Fugiat consectetur pariatur qui aliqua consequat elit excepteur id ut exercitation aliqua deserunt culpa. Qui veniam culpa dolor sit veniam officia elit elit cillum ipsum. Laboris excepteur exercitation exercitation cupidatat enim deserunt. Minim mollit do fugiat ipsum consectetur esse irure.
     `,
-    publishedDate: new Date()
-  }
+    publishedDate: new Date(),
+  },
 ];

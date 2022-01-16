@@ -40,7 +40,8 @@ const NewsArticle: React.FC<any> = () => {
           </button>
           <h6 className="alert-heading">In Development</h6>
           <p>
-            This page is in development, and is a placeholder for the functionality.
+            This page is in development, and is a placeholder for the
+            functionality.
           </p>
         </div>
       </div>
