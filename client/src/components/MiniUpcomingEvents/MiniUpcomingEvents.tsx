@@ -3,6 +3,7 @@ import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
 import moment, { Moment } from "moment";
 import { pagnateText } from "../../utils";
 import "./MiniUpcomingEvents.scss";
+import { Link } from "react-router-dom";
 
 const calId = "cc2844kp81lfo1oti18hh92h9s@group.calendar.google.com";
 const requestConfigGetEvents: AxiosRequestConfig = {
@@ -64,7 +65,7 @@ const MiniUpcomingEvents: React.FC<any> = () => {
                 {eventDate.format("h:mma[,]") ?? ""}{" "}
                 {event.location ? event.location + ". " : ""}
               </b>
-              {pagnateText(event.description, 100)}
+              {pagnateText(event.description, 175)}
             </p>
           </div>
         </div>
@@ -100,6 +101,11 @@ const MiniUpcomingEvents: React.FC<any> = () => {
     <div className="MiniUpcomingEvents">
       <h2>Upcoming</h2>
       <Content />
+      <div className="text-lg-right text-sm-center">
+        <Link to="/schedule">
+          <i className="fas fa-external-link-alt" /> View calendar
+        </Link>
+      </div>
     </div>
   );
 };
