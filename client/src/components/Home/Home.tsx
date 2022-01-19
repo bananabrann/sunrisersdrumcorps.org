@@ -86,7 +86,6 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
         </div> */}
       </div>
 
-
       {/* 
 <div className="container selection-area">
   <div className="little-links row">
