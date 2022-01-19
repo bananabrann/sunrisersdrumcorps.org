@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../Footer/Footer";
 import "./Schedule.scss";
 
 interface IScheduleProps {}
 
 const Schedule: React.FC<IScheduleProps> = (props: IScheduleProps) => {
+  useEffect(() => {
+    document.title = "The Sunrisers - Schedule";
+  }, []);
+
   return (
     <div className="Schedule">
       {/* TODO - Add navbar */}
