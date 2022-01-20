@@ -5,9 +5,7 @@ import LogoWhiteout from "../../res/img/logo-alt.png";
 import LogoCursive from "../../res/svg/logo-text-whiteout.svg";
 
 // pretier-ignore
-interface IFooterProps {
-
-}
+interface IFooterProps {}
 
 const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
   return (
@@ -28,7 +26,8 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
               </Link>
 
               <Link to="/news">
-                <p>All News</p></Link>
+                <p>All News</p>
+              </Link>
 
               <Link to={"/policy"}>
                 <p>Policies</p>
@@ -46,7 +45,6 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
                 <p>Sexual Harrassment and Assault</p>
               </Link>
             </div>
-
 
             <div className="col-md-6 mx-auto">
               <div className="container">
