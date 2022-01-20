@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../Home/Home";
 import MiniNews from "../MiniNews/MiniNews";
 import NewsArticle from "../NewsArticle/NewsArticle";
+import PageNotFound from "../PageNotFound/PageNotFound";
 import Schedule from "../Schedule/Schedule";
 import "./App.scss";
 
@@ -20,7 +21,7 @@ const App = () => {
           <Route path="/schedule" element={<Schedule />} />
           {/* <Route path="news" element={<Home />} /> */}
           <Route path="/news/:newsArticleId" element={<NewsArticle />} />
-          <Route path="*" element={<p>404</p>} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </div>

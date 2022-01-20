@@ -1,13 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NoticeBanner from "../NoticeBanner/NoticeBanner";
+import svgSunLogo from "../../res/svg/logo-sun.svg";
+import svgSunrisersCursive from "../../res/svg/logo-text.svg";
 import "./Navbar.scss";
 
-interface INavbarProps {}
+interface INavbarProps {
+  hideSunLogo?: boolean;
+}
 
 const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
   return (
     <div className="Navbar">
+      {!props.hideSunLogo ? (
+        <Link to="/">
+          <img className="sun-logo" src={svgSunLogo} alt="" id="sun-logo" />
+        </Link>
+      ) : (
+        <div />
+      )}
+
       <div className="container justify-content-center mt-4">
         <div
           className="alert alert-info alert-dismissible fade show"

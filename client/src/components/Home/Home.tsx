@@ -18,7 +18,7 @@ interface IHomeProps {}
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   return (
     <div className="Home">
-      <Navbar />
+      <Navbar hideSunLogo={true} />
 
       <div className="hero">
         <img src={svgSunlogo} alt="" id="sun-logo" />
