@@ -16,52 +16,59 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
         <div className="col-sm-8 ">
           <div className="row">
             {/* FIXME - Verify text-align-right is working when online */}
-            <div className="col-md-6 text-align-right">
+            <div className="col-md-6">
               <Link to="#">
-                <p>Request information</p>
+                <p>Join the Sunrisers</p>
               </Link>
 
               <Link to={"/schedule"}>
-                <p>Schedule</p>
+                <p>View Schedule</p>
               </Link>
 
-              <Link to="/news">
-                <p>All News</p>
+              <Link to="#" className="disabled">
+                <p>See All News</p>
               </Link>
 
-              <Link to={"/policy"}>
-                <p>Policies</p>
+              <Link to="/staff">
+                <p>See Staff</p>
               </Link>
 
-              <Link to="#">
-                <p>Merchandise</p>
+              <Link to="#" className="disabled">
+                <p>See Policies</p>
               </Link>
 
-              <Link to="/support">
+              <a href="https://sunrisers-drum-bugle-corps.myshopify.com/">
+                <p>Buy Merchandise</p>
+              </a>
+
+              <Link to="#" className="disabled">
                 <p>Donate or Support</p>
               </Link>
 
-              <Link to={"/policy"}>
+              <Link to="#" className="disabled">
                 <p>Sexual Harrassment and Assault</p>
               </Link>
             </div>
 
-            <div className="col-md-6 mx-auto">
+            <div className="col-md-6">
               <div className="container">
                 <div className="row">
-                  <i className="fab fa-facebook fa-2x"></i>
-                  <i className="fab fa-twitter fa-2x"></i>
+                  <a href="https://www.facebook.com/lisunrisers">
+                    <i className="fab fa-facebook fa-2x"></i>
+                  </a>
+                  {/* <i className="fab fa-twitter fa-2x"></i> */}
                 </div>
               </div>
 
               <hr />
               <img src={LogoCursive} className="mx-auto" alt="" />
-              <h6>mail@mail.com</h6>
+              <h6>info@sunrisersdrumcorps.org</h6>
               <p className="mx-auto">Long Island, New York</p>
             </div>
           </div>
 
           <div className="row bottom-text">
+            <hr />
             <small>Sunrisers Drum {`&`} Bugle Corps, (C) 2022</small>
             <small>Website MIT license.</small>
           </div>

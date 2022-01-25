@@ -59,9 +59,23 @@ a {
   color: $brand-blue;
   transition-duration: 150ms;
 
+  &:not(.disabled) {
+    &:hover {
+      transition-duration: 150ms;
+      color: $brand-orange;
+    }
+  }
+}
+
+.disabled {
+  opacity: 50% !important;
+  text-decoration: none;
+  cursor: not-allowed;
+  * {
+    opacity: 50%;
+  }
   &:hover {
-    transition-duration: 150ms;
-    color: $brand-orange;
+    text-decoration: none;
   }
 }
 
