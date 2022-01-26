@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import HistorySection from "./HistorySection/HistorySection";
@@ -16,6 +16,31 @@ import svgSunlogo from "../../res/svg/logo-sun.svg";
 interface IHomeProps {}
 
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
+  const [data, setData] = useState("");
+
+  useEffect(() => {
+    console.log("??");
+
+    fetch("/api/hi")
+      .then((res) => {
+        return res.json();
+      })
+      .then((dataL) => {
+        console.log(data);
+        setData(dataL.body);
+      });
+
+    // (async function() {
+    //   const body = await(await fetch("/api/hi")).json();
+
+    //   console.log('the stuff...');
+
+    //   console.log(body);
+
+    //   setData(body)
+    // })()
+  }, []);
+
   return (
     <div className="Home">
       <Navbar hideSunLogo={true} />
@@ -114,6 +139,8 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 */}
 
       <div className="container">
+        <h1>the data {data}</h1>
+
         <div className="row">
           <div className="col-7">
             <MiniNews />

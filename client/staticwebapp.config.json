@@ -1,0 +1,13 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/img/*.{png,jpg,gif}", "/css/*"]
+  },
+
+  "routes": [
+    {
+      "route": "/lv50",
+      "redirect": "https://sunrisers-drum-bugle-corps.myshopify.com/products/larry-vistonti-roast-50-years"
+    }
+  ]
+}
