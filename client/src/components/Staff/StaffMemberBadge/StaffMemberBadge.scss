@@ -1,0 +1,34 @@
+.StaffMemberBadge {
+  max-width: 245px;
+  width: 50%;
+
+  .card {
+    height: 375px;
+    margin-bottom: 12px;
+
+    .card-body {
+      padding: 2px;
+      & > * {
+        text-align: center;
+      }
+    }
+
+    h5,
+    h6 {
+      padding: 4px;
+      margin-bottom: 0;
+    }
+
+    img {
+      border-radius: 30px;
+      padding: 15px;
+      height: 275px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    img.opaque {
+      opacity: 50%;
+    }
+  }
+}

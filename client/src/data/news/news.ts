@@ -1,3 +1,9 @@
+/*
+  NOTE -- This method of loading data manually is a temporary
+  measure, and not intended to be the final method of updating
+  news information.
+*/
+
 import { Moment } from "moment";
 
 export interface NewsItem {

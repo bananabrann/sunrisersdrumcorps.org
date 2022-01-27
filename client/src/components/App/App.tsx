@@ -5,6 +5,7 @@ import MiniNews from "../MiniNews/MiniNews";
 import NewsArticle from "../NewsArticle/NewsArticle";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import Schedule from "../Schedule/Schedule";
+import Staff from "../Staff/Staff";
 import "./App.scss";
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/schedule" element={<Schedule />} />
           {/* <Route path="news" element={<Home />} /> */}
           <Route path="/news/:newsArticleId" element={<NewsArticle />} />
+          <Route path="/staff" element={<Staff />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
