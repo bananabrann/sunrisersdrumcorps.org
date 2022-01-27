@@ -11,6 +11,7 @@ export interface StaffObject {
   category: string;
   biography: string | null;
   imageUrlSymbolicObjectName?: string | null;
+  email?: string;
 }
 
 /*
@@ -101,8 +102,17 @@ export const staffData: Array<StaffObject> = [
     name: "David Hobart",
     jobTitle: "Executive Director",
     category: "design",
-    biography: null,
+    biography: `
+    Id esse excepteur nostrud dolore aliqua ex eiusmod officia pariatur. Laboris laborum et aute qui ullamco sunt fugiat cillum anim exercitation nostrud do veniam. Minim dolor voluptate ea minim proident exercitation excepteur elit in. Non fugiat culpa officia aliquip ullamco id magna dolore et mollit velit irure. Ea sit est proident id.
+
+Dolore ea aute qui nostrud et labore sit occaecat ullamco occaecat ut mollit incididunt. Nisi ipsum mollit nisi non ex sint. Elit laborum labore sunt aliqua laborum. Fugiat ipsum do ex ex eiusmod. Deserunt tempor est dolore veniam aliquip do exercitation occaecat ea velit adipisicing. Id adipisicing quis consectetur labore officia exercitation ullamco eu cupidatat proident do. Aliqua minim laboris deserunt laboris nostrud esse officia.
+
+Consectetur dolore quis deserunt voluptate minim dolor cillum dolor. Aliqua consectetur amet commodo fugiat deserunt enim esse laboris amet laboris dolor deserunt. Amet sit reprehenderit elit eiusmod elit adipisicing laboris quis ex. Tempor dolor irure culpa nostrud.
+
+Proident veniam ipsum qui pariatur elit eu ea nulla occaecat. Eiusmod sit nostrud eu commodo cupidatat amet officia proident et culpa duis non dolor enim. In dolor anim aliqua cupidatat aute consequat. Id est sit enim exercitation excepteur consectetur sunt amet. Et sint qui duis nostrud amet in id. Duis ad eu reprehenderit ut voluptate adipisicing in aliqua dolore minim est labore.
+    `,
     imageUrlSymbolicObjectName: "staff/defaults/man.png",
+    email: "dhobart1@gmail.com",
   },
 
   {
@@ -124,6 +134,7 @@ export const staffData: Array<StaffObject> = [
     David Hobart, Executive Director "Budd has a proud history here with the Sunrisers and I am ecstatic that he will be bringing his wealth of knowledge, passion, and skill back home".
     `,
     imageUrlSymbolicObjectName: "staff/budd.jpg",
+    email: "email@email.com",
   },
 
   {

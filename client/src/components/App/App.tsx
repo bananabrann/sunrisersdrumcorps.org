@@ -6,6 +6,7 @@ import NewsArticle from "../NewsArticle/NewsArticle";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import Schedule from "../Schedule/Schedule";
 import Staff from "../Staff/Staff";
+import StaffSinglePage from "../StaffSinglePage/StaffSinglePage";
 import "./App.scss";
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           {/* <Route path="news" element={<Home />} /> */}
           <Route path="/news/:newsArticleId" element={<NewsArticle />} />
           <Route path="/staff" element={<Staff />} />
+          <Route path="/staff/:id" element={<StaffSinglePage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

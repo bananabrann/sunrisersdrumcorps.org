@@ -1,16 +1,48 @@
+@import "../../../styles/colors";
+
 .StaffMemberBadge {
-  max-width: 245px;
-  width: 50%;
+  color: $black;
+  flex-grow: 1;
+  flex-basis: 225px;
+  text-decoration: none !important;
+
+  &.hover-effects {
+    color: $brand-blue;
+  }
+
+  &:hover.hover-effects {
+    .card {
+      background-color: rgba($color: #f0f0f0, $alpha: 1);
+    }
+  }
+  &:not(.hover-effects) {
+    color: inherit;
+    &:hover {
+      color: inherit;
+      cursor: inherit;
+    }
+  }
 
   .card {
-    height: 375px;
-    margin-bottom: 12px;
-
+    height: 100%;
     .card-body {
       padding: 2px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       & > * {
         text-align: center;
       }
+    }
+
+    .icons {
+      // align-items: flex-end;
+      padding-bottom: 8px;
+      cursor: pointer;
+      p {
+        margin-bottom: 2.5px;
+      }
+      color: $brand-blue;
     }
 
     h5,

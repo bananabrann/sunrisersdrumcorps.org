@@ -4,7 +4,6 @@ import Navbar from "../Navbar/Navbar";
 import { staffData as staffDataRaw, StaffObject } from "../../data/staff/staff";
 import StaffMemberBadge from "./StaffMemberBadge/StaffMemberBadge";
 import "./Staff.scss";
-import { Link } from "react-router-dom";
 
 interface StaffPageProps {}
 
@@ -105,61 +104,73 @@ const Staff: React.FC<StaffPageProps> = (props: StaffPageProps) => {
 
         <div className="container">
           <div className="row">
-            <div className="col-3">
-              <div className="list-group" id="list-tab" role="tablist">
-                <a
-                  className="list-group-item list-group-item-action active"
-                  id="list-home-list"
-                  data-toggle="list"
-                  href="#list-home"
-                  role="tab"
-                  aria-controls="home"
-                >
-                  Design
-                </a>
-                <a
-                  className="list-group-item list-group-item-action"
-                  id="list-profile-list"
-                  data-toggle="list"
-                  href="#list-profile"
-                  role="tab"
-                  aria-controls="profile"
-                >
-                  Visual
-                </a>
-                <a
-                  className="list-group-item list-group-item-action"
-                  id="list-brass-list"
-                  data-toggle="list"
-                  href="#list-brass"
-                  role="tab"
-                  aria-controls="brass"
-                >
-                  Brass
-                </a>
-                <a
-                  className="list-group-item list-group-item-action"
-                  id="list-percussion-list"
-                  data-toggle="list"
-                  href="#list-percussion"
-                  role="tab"
-                  aria-controls="messages"
-                >
-                  Percussion
-                </a>
-                <a
-                  className="list-group-item list-group-item-action"
-                  id="list-colorguard-list"
-                  data-toggle="list"
-                  href="#list-colorguard"
-                  role="tab"
-                  aria-controls="settings"
-                >
-                  Color Guard
-                </a>
+            <div className="col-md-3">
+              <div className="container-fluid px-0">
+                <div className="list-group" id="list-tab" role="tablist">
+                  <a
+                    className="list-group-item list-group-item-action active"
+                    id="list-home-list"
+                    data-toggle="list"
+                    href="#list-home"
+                    role="tab"
+                    aria-controls="home"
+                  >
+                    Design
+                  </a>
+                  <a
+                    className="list-group-item list-group-item-action"
+                    id="list-profile-list"
+                    data-toggle="list"
+                    href="#list-profile"
+                    role="tab"
+                    aria-controls="profile"
+                  >
+                    Visual
+                  </a>
+                  <a
+                    className="list-group-item list-group-item-action"
+                    id="list-brass-list"
+                    data-toggle="list"
+                    href="#list-brass"
+                    role="tab"
+                    aria-controls="brass"
+                  >
+                    Brass
+                  </a>
+                  <a
+                    className="list-group-item list-group-item-action"
+                    id="list-percussion-list"
+                    data-toggle="list"
+                    href="#list-percussion"
+                    role="tab"
+                    aria-controls="messages"
+                  >
+                    Percussion
+                  </a>
+                  <a
+                    className="list-group-item list-group-item-action"
+                    id="list-colorguard-list"
+                    data-toggle="list"
+                    href="#list-colorguard"
+                    role="tab"
+                    aria-controls="settings"
+                  >
+                    Color Guard
+                  </a>
+                </div>
+
+                <div className="text-center container">
+                  <p>
+                    <small>
+                      Default profile pictures provided by{" "}
+                      <a href="https://www.flaticon.com/">FlatIcon</a>. Thank
+                      you!
+                    </small>
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="col-8">
+            <div className="col-md-9">
               <div className="tab-content" id="nav-tabContent">
                 <div
                   className="tab-pane fade show active"
@@ -204,15 +215,6 @@ const Staff: React.FC<StaffPageProps> = (props: StaffPageProps) => {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="text-center container">
-          <p>
-            <small>
-              Default profile pictures provided by{" "}
-              <a href="https://www.flaticon.com/">FlatIcon</a>. Thank you!
-            </small>
-          </p>
         </div>
       </div>
 
