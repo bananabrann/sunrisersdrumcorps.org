@@ -99,7 +99,7 @@ const MiniUpcomingEvents: React.FC<any> = () => {
 
   return (
     <div className="MiniUpcomingEvents">
-      <h2>Upcoming</h2>
+      <h3>Upcoming Events</h3>
       <Content />
       <div className="text-lg-right text-sm-center">
         <Link to="/schedule">
