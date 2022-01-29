@@ -2,49 +2,26 @@
 
 $breakpoint: 500px;
 
+/*
+    FIXME -- Unknown why white space is below footer. The current implementation
+    is to add a negative value to App.scss margin-bottom.
+*/
+
 .Footer {
   background-color: $black;
   color: $white;
   padding-top: 20px;
-
   p {
     margin: 4px;
   }
-
   a {
     color: $white;
   }
-
   img {
     width: 100%;
     color: $white;
     max-width: 350px;
   }
-
-  // position: relative;
-  // width: 100%;
-
-  //     &:last-child {
-  //       // Whiteout logo and social media column
-  //       display: flex;
-  //       justify-content: center;
-  //       align-items: center;
-  //       & * + * {
-  //         margin-top: 10px;
-  //       }
-  //       img {
-  //         filter: brightness(0) invert(1); // Makes PNG white
-  //       }
-  //       .logo-whiteout {
-  //         width: 132px;
-  //         padding-bottom: 8px;
-  //       }
-  //       .social-media > i {
-  //         margin: auto 5px;
-  //       }
-  //     }
-  //   }
-
   .bottom-text {
     display: flex;
     flex-flow: column wrap;

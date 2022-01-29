@@ -2,12 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import HistorySection from "./HistorySection/HistorySection";
-import HomeCarousel from "./HomeCarousel/HomeCarousel";
 import HomePhotoGallery from "./HomePhotoGallery/HomePhotoGallery";
 import MiniUpcomingEvents from "../MiniUpcomingEvents/MiniUpcomingEvents";
 import Navbar from "../Navbar/Navbar";
 import MiniNews from "../MiniNews/MiniNews";
-import NoticeBanner from "../NoticeBanner/NoticeBanner";
 import LeeButton from "../LeeButton/LeeButton";
 import "./Home.scss";
 import svgSunrisersCursive from "../../res/svg/logo-text.svg";
@@ -16,8 +14,6 @@ import svgSunlogo from "../../res/svg/logo-sun.svg";
 interface IHomeProps {}
 
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
-  const [data, setData] = useState("");
-
   return (
     <div className="Home">
       <Navbar hideSunLogo={true} />
@@ -53,7 +49,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 
               <LeeButton
                 pathToURL="#"
-                displayText="Join"
+                displayText="Join Us"
                 fontAwesomeIconCode=""
                 bootstrapBtnMode="primary"
               />

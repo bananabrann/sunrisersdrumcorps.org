@@ -8,6 +8,10 @@
     {
       "route": "/lv50",
       "redirect": "https://sunrisers-drum-bugle-corps.myshopify.com/products/larry-vistonti-roast-50-years"
+    },
+    {
+      "route": "/merch",
+      "redirect": "https://sunrisers-drum-bugle-corps.myshopify.com/"
     }
   ]
 }

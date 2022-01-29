@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../Home/Home";
-import MiniNews from "../MiniNews/MiniNews";
 import NewsArticle from "../NewsArticle/NewsArticle";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import Schedule from "../Schedule/Schedule";
