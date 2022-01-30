@@ -11,7 +11,7 @@ const News: React.FC<NewsProps> = (props: NewsProps) => {
     const content = newsData.map((article: NewsItem) => {
       return (
         <div className="article">
-          <NewsLineItem {...article} />;
+          <NewsLineItem urlPrefix="" newsItem={{ ...article }} />
         </div>
       );
     });

@@ -15,7 +15,7 @@ const MiniNews: React.FC<INewsProps> = (props: INewsProps) => {
     const content = newsData.map((article: NewsItem) => {
       return (
         <div className="article">
-          <NewsLineItem {...article} />
+          <NewsLineItem urlPrefix="news/" newsItem={{...article}} />
         </div>
       );
     });

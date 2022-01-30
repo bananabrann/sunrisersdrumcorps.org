@@ -61,6 +61,9 @@ const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
                 <Link to="/schedule">Schedule</Link>
               </li>
               <li>
+                <Link to="/news">News</Link>
+              </li>
+              <li>
                 <Link to="/staff">Staff</Link>
               </li>
               <li>
