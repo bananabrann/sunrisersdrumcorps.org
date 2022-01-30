@@ -33,7 +33,7 @@ const NewsLineItem: React.FC<NewsLineItemProps> = (
       <p className="mb-0">{bodyTextPaginated}</p>
       <small>{author}</small>
     </div>
-  )
-}
+  );
+};
 
 export default NewsLineItem;

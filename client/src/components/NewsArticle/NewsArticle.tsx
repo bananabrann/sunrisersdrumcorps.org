@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import moment from "moment"
+import moment from "moment";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import { newsData, NewsItem } from "../../data/news/news";
@@ -14,15 +14,16 @@ type NewsArticleParams = {
 const NewsArticle: React.FC<any> = () => {
   const params = useParams<NewsArticleParams>();
   const [article, setArticle] = useState<NewsItem>();
-  const [publishedDateFormatted, setPublishedDateFormatted] = useState<string>()
+  const [publishedDateFormatted, setPublishedDateFormatted] =
+    useState<string>();
 
   useEffect(() => {
     setArticle(newsData.find((e: NewsItem) => e.id === params.newsArticleId));
   }, []);
 
   useEffect(() => {
-    const x = moment(article?.publishedDate).format("MMMM Do, YYYY")
-    setPublishedDateFormatted(x ? `Published on ${x}` : "No time published")
+    const x = moment(article?.publishedDate).format("MMMM Do, YYYY");
+    setPublishedDateFormatted(x ? `Published on ${x}` : "No time published");
   }, [article]);
 
   return (
@@ -43,9 +44,7 @@ const NewsArticle: React.FC<any> = () => {
             <span aria-hidden="true">&times;</span>
           </button>
           <h6 className="alert-heading">Hey, you!</h6>
-          <p>
-            For the latest updates, follow us on social media!
-          </p>
+          <p>For the latest updates, follow us on social media!</p>
         </div>
       </div>
 

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { newsData, NewsItem } from "../../data/news/news";
 import { pagnateText } from "../../utils";
-import NewsLineItem from "../NewsLineItem/NewsLineItem"
+import NewsLineItem from "../NewsLineItem/NewsLineItem";
 import "./MiniNews.scss";
 
 interface INewsProps {
@@ -15,7 +15,7 @@ const MiniNews: React.FC<INewsProps> = (props: INewsProps) => {
     const content = newsData.map((article: NewsItem) => {
       return (
         <div className="article">
-          <NewsLineItem urlPrefix="news/" newsItem={{...article}} />
+          <NewsLineItem urlPrefix="news/" newsItem={{ ...article }} />
         </div>
       );
     });
@@ -39,7 +39,7 @@ const MiniNews: React.FC<INewsProps> = (props: INewsProps) => {
           <i className="fas fa-external-link-alt" /> See all news
         </Link>
       </div>
-      <Content />      
+      <Content />
     </div>
   );
 };
