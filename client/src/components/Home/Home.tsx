@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 // @ts-ignore
-import FB from "fb"
+import FB from "fb";
 import Footer from "../Footer/Footer";
 import HistorySection from "./HistorySection/HistorySection";
 import HomePhotoGallery from "./HomePhotoGallery/HomePhotoGallery";
@@ -18,13 +18,12 @@ interface IHomeProps {}
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   useEffect(() => {
     // FB.api("/lisunrisers/feed",(res: any) => {
-      // if(res && !res.error) {
-      //   console.log('hi');
-        
-      //   console.log(res);
-      // }
+    // if(res && !res.error) {
+    //   console.log('hi');
+    //   console.log(res);
+    // }
     // })
-  },[])
+  }, []);
 
   return (
     <div className="Home">
