@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { newsData, NewsItem } from "../../data/news/news";
 import { pagnateText } from "../../utils";
+import NewsLineItem from "../NewsLineItem/NewsLineItem";
 import "./MiniNews.scss";
 
 interface INewsProps {
@@ -12,16 +13,9 @@ interface INewsProps {
 const MiniNews: React.FC<INewsProps> = (props: INewsProps) => {
   function NewsContentBlock() {
     const content = newsData.map((article: NewsItem) => {
-      const publishedDate: Moment = moment(article.publishedDate);
-      const titleTextPaginated: string = pagnateText(article.title, 40);
-      const bodyTextPaginated: string = pagnateText(article.body, 250);
-
       return (
         <div className="article">
-          <h4>
-            <Link to={`news/${article.id}`}>{titleTextPaginated}</Link>
-          </h4>
-          <p>{bodyTextPaginated}</p>
+          <NewsLineItem urlPrefix="news/" newsItem={{ ...article }} />
         </div>
       );
     });
@@ -39,6 +33,12 @@ const MiniNews: React.FC<INewsProps> = (props: INewsProps) => {
 
   return (
     <div className="MiniNews">
+      <h3 className="mb-0">Latest News</h3>
+      <div className="text-lg-left">
+        <Link to="/news">
+          <i className="fas fa-external-link-alt" /> See all news
+        </Link>
+      </div>
       <Content />
     </div>
   );

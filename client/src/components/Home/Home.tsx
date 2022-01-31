@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+// @ts-ignore
+import FB from "fb";
 import Footer from "../Footer/Footer";
 import HistorySection from "./HistorySection/HistorySection";
 import HomePhotoGallery from "./HomePhotoGallery/HomePhotoGallery";
@@ -14,6 +16,15 @@ import svgSunlogo from "../../res/svg/logo-sun.svg";
 interface IHomeProps {}
 
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
+  useEffect(() => {
+    // FB.api("/lisunrisers/feed",(res: any) => {
+    // if(res && !res.error) {
+    //   console.log('hi');
+    //   console.log(res);
+    // }
+    // })
+  }, []);
+
   return (
     <div className="Home">
       <Navbar hideSunLogo={true} />
@@ -113,10 +124,11 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
 
       <div className="container">
         <div className="row">
-          <div className="col-7">
+          <div className="col-lg-7">
             <MiniNews />
+            <br />
           </div>
-          <div className="col-5">
+          <div className="col-lg-5">
             <MiniUpcomingEvents />
           </div>
         </div>

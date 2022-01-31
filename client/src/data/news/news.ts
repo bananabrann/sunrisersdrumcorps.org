@@ -11,6 +11,7 @@ export interface NewsItem {
   title: string;
   body: string;
   publishedDate: Moment | Date;
+  author?: string;
 }
 
 // NOTE -- Newline and spacing is maintained by the CSS property white-space: pre-line
@@ -24,6 +25,7 @@ export const newsData: Array<NewsItem> = [
 Proident tempor laborum do laboris culpa reprehenderit mollit commodo. Culpa fugiat minim aliqua esse commodo deserunt id adipisicing. Voluptate deserunt elit ipsum ad. Labore nulla reprehenderit cillum proident ipsum. Laboris occaecat dolor labore est mollit.
     `,
     publishedDate: new Date(),
+    author: "Bob Smith",
   },
   {
     id: "1",

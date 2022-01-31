@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../Home/Home";
+import News from "../News/News";
 import NewsArticle from "../NewsArticle/NewsArticle";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import Schedule from "../Schedule/Schedule";
@@ -20,7 +21,7 @@ const App = () => {
           */}
           <Route path="/" element={<Home />} />
           <Route path="/schedule" element={<Schedule />} />
-          {/* <Route path="news" element={<Home />} /> */}
+          <Route path="news" element={<News />} />
           <Route path="/news/:newsArticleId" element={<NewsArticle />} />
           <Route path="/staff" element={<Staff />} />
           <Route path="/staff/:id" element={<StaffSinglePage />} />

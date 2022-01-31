@@ -1,5 +1,5 @@
 import React from "react";
-import picColorGuardLady from "../../../res/img/photo-content/colorguard.jpg";
+import picColorGuardLady from "../../../res/img/photo-content/brassplayer.jpg";
 import picSunrisers1961 from "../../../res/img/photo-content/drumline1961.jpg";
 import homeStarMap from "../../../res/img/sunrisers-home-map-trans.png";
 import "./HistorySection.scss";
