@@ -43,7 +43,7 @@ export const staffData: Array<StaffObject> = [
 
     In the Spring of 2019, he was named lead snare Tech and later named the Percussion Caption Head and Director of Percussion for the Trumbull High School Golden Eagle Marching Band and Winter Percussion programs from Trumbull, Connecticut. He has helped lead them to multiple WGI and BOA appearances during his time.
 
-    Carlos is no stranger to the Sunrisers having taught in 2019 and late last season.
+    Carlos is not a stranger to the Sunrisers having taught in 2019 and late last season.
 
     “I’m honored to have Carlos on board working in this dual role.  His passion to bring a rewarding experience to our membership and staff is inspiring.  Carlos,  with his level headed approach will help guide our Corps into a successful future this year and beyond”.  David Hobart, Executive Director
 
