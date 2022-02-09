@@ -155,7 +155,7 @@ export default function Hero({ children, home }) {
       <main>
         <div className="pt-10 bg-white sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
           <div className="mx-auto max-w-7xl lg:px-8">
-            <TextLogo className="lg:relative z-50 " />
+            <TextLogo className="lg:relative z-50 md:px-10 " />
 
             <div className="z-auto lg:-mt-48 lg:grid lg:grid-cols-2 lg:gap-8">
               <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
