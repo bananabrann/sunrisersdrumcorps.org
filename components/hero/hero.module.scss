@@ -3,6 +3,4 @@
 .sunlogo {
   @include rotate-me();
 
-  // FIXME -- Tailwind translations appear not to work
-  translate: -500px;
 }

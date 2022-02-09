@@ -173,18 +173,23 @@ export default function Hero({ children, home }) {
                       aria-hidden="true"
                     />
                   </a> */}
-                  <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-black sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                    <span className="block">Get ready for the </span>
+                  <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-black sm:mt-5 sm:text-6xl md:text-5xl md:pt-2 xl:text-6xl">
+                    <span className="block">Rise and shine, the</span>
                     <span className="block text-blue">2022 season</span>
+                    <span className="block">is here</span>
                   </h1>
+
                   <p className="mt-3 text-base text-black sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                    occaecat fugiat.
+                    The Sunrisers Drum & Bugle Corps is back in{" "}
+                    <span className="font-bold">Long Island, New York</span> and
+                    the North-Atlantic area for the 2022 season. Whether it's as
+                    a spectator enjoying the performance, or
                   </p>
 
                   <div className="mt-10 sm:mt-12">
-                    <h2 className="mt-2 text-2xl font-bold tracking-tight mb-5 text-gray-700" >Join the Sunrisers</h2>
+                    <h2 className="mt-2 text-2xl font-bold tracking-tight mb-5 text-gray-700">
+                      Join the Sunrisers
+                    </h2>
                     <JoiningSteps />
 
                     {/* <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-black sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
@@ -241,13 +246,14 @@ export default function Hero({ children, home }) {
                     </div>
 
                     <p className="mt-3 text-sm text-gray-500 sm:mt-4">
-                        We'll review your information then reach out to you, or you can email us at email@email.com.
-                        By providing your email, you agree to our{" "}
-                        <a href="#" className="font-medium text-black">
-                          terms of service
-                        </a>
-                        .
-                      </p>
+                      We'll review your information then reach out to you, or
+                      you can email us at email@email.com. By providing your
+                      email, you agree to our{" "}
+                      <a href="#" className="font-medium text-black">
+                        terms of service
+                      </a>
+                      .
+                    </p>
 
                     <button
                       type="button"
@@ -291,17 +297,17 @@ export default function Hero({ children, home }) {
                 </div>
               </div>
               <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
-                <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-                  {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-                  {/* <img
+                {/* <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 "> */}
+                {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
+                {/* <img
                     className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                     src="https://tailwindui.com/img/component-images/cloud-illustration-orange-400.svg"
                     alt=""
                   /> */}
-                  <SunLogo
-                    className={`z-10 w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none ${styles.sunlogo} `}
-                  />
-                </div>
+                <SunLogo
+                  className={`z-10 w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none ${styles.sunlogo} `}
+                />
+                {/* </div> */}
               </div>
             </div>
           </div>
