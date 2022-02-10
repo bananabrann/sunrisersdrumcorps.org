@@ -17,7 +17,7 @@ export default function Home() {
         <title>Sunrisers - Home</title>
       </Head>
 
-      <Navbar />
+      <Navbar useBigLetter={false} />
 
       <Hero>
 

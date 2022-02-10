@@ -1,18 +1,20 @@
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Icon from "../../resources/svg/logo-letter.svg";
 import Image from "next/image";
 
 const navigation = [
-  { name: "Schedule", href: "#" },
+  { name: "Schedule", href: "/schedule" },
   { name: "News", href: "#" },
   { name: "Staff", href: "#" },
   { name: "Support Us", href: "#" },
   { name: "Merchandise", href: "#" },
 ];
 
-export default function Navbar() {
+export default function Navbar({useBigLetter}) {
+  const [isBigLetter, setIsBiggerLetter] = useState(useBigLetter === undefined)
+
   return (
     <Popover as="header" className="relative">
       <div className="bg-gray-900 pt-6">
@@ -22,9 +24,9 @@ export default function Navbar() {
         >
           <div className="flex items-center flex-1">
             <div className="flex items-center justify-between w-full md:w-auto">
-              <a href="#">
+              <a href="/" className={`scale-125 ${isBigLetter ? 'md:scale-[3] md:translate-y-10 md:translate-x-6 md:mr-10' : ''}`} >
                 <span className="sr-only">Workflow</span>
-                <Icon alt="" className="h-8 w-auto sm:h-10" />
+                <Icon alt="" className="h-12 w-auto" />
               </a>
               <div className="-mr-2 flex items-center md:hidden">
                 <Popover.Button className="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
