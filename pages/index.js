@@ -8,6 +8,7 @@ import Stats from "../components/hero/stats/stats";
 import History from "../components/hero/history/history";
 import FAQ from "../components/hero/faq/faq"
 
+
 export default function Home() {
   return (
     <Layout>
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
 
       <Hero>
-        
+
       </Hero>
 
       <WaveSep className="" />
@@ -27,6 +28,7 @@ export default function Home() {
         {/* <History /> */}
         <FAQ />
       </div>
+
 
 
       <Footer />

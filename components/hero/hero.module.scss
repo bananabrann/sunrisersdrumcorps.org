@@ -2,5 +2,7 @@
 
 .sunlogo {
   @include rotate-me();
-
+  @media screen and (min-width: 1100px) {
+    left: 8vw;
+  }
 }
