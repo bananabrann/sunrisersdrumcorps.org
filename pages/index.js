@@ -7,6 +7,7 @@ import WaveSep from "../components/waveSep/waveSep";
 import Stats from "../components/hero/stats/stats";
 import History from "../components/hero/history/history";
 import FAQ from "../components/hero/faq/faq"
+import Navbar from "../components/navbar/navbar";
 
 
 export default function Home() {
@@ -15,6 +16,8 @@ export default function Home() {
       <Head>
         <title>Sunrisers - Home</title>
       </Head>
+
+      <Navbar />
 
       <Hero>
 
