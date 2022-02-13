@@ -365,6 +365,16 @@ export default function Staff() {
             ))}
           </ul>
         </div>
+        <div className="text-center mt-10  container">
+          <hr />
+          <p>
+            Default profile pictures provided by{" "}
+            <a className="text-orange-700" href="https://www.flaticon.com/">
+              FlatIcon
+            </a>{" "}
+            free of charge. Thank you!
+          </p>
+        </div>
       </div>
 
       <Footer />
