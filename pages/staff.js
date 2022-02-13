@@ -71,7 +71,7 @@ const people = [
     name: "David Hobart",
     role: "Executive Director",
     email: "hobart1@gmail.com",
-    imageUrl: "/img/staff/defaults/man.png",
+    imageUrl: "/img/staff/david.png",
     bio: null,
     tags: ["leaders"],
   },

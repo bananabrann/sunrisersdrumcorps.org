@@ -23,20 +23,23 @@ export default function Navbar({ useBigLetter }) {
           aria-label="Global"
         >
           <div className="flex items-center flex-1">
-            <div className="flex items-center justify-between w-full md:w-auto">
-              <Link
-                href="/"
+            <div
+              className={`flex items-center justify-between w-full md:w-auto `}
+            >
+              <div
                 className={`scale-125 ${
                   isBigLetter
                     ? "md:scale-[3] md:translate-y-10 md:translate-x-6 md:mr-10"
                     : ""
                 }`}
               >
-                <div className="cursor-pointer">
-                  <span className="sr-only">Workflow</span>
-                  <Icon alt="" className="h-12 w-auto" />
-                </div>
-              </Link>
+                <Link href="/">
+                  <div className="cursor-pointer">
+                    <span className="sr-only">Workflow</span>
+                    <Icon alt="" className="h-12 w-auto" />
+                  </div>
+                </Link>
+              </div>
               <div className="-mr-2 flex items-center md:hidden">
                 <Popover.Button className="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
