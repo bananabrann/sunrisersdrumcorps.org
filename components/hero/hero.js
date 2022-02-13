@@ -56,8 +56,8 @@ export default function Hero({ children, home }) {
                   <p className="mt-3 text-base text-black sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                     The Sunrisers Drum & Bugle Corps is back in{" "}
                     <span className="font-bold">Long Island, New York</span> and
-                    the North-Atlantic area for the 2022 season. Whether it&apos;s as
-                    a spectator enjoying the performance, or
+                    the North-Atlantic area for the 2022 season. Whether
+                    it&apos;s as a spectator enjoying the performance, or
                   </p>
 
                   <div className="mt-10 sm:mt-12">
@@ -153,8 +153,8 @@ export default function Hero({ children, home }) {
                     </div>
 
                     <p className="mt-3 text-sm text-gray-500 sm:mt-4">
-                      We&apos;ll review your information then reach out to you, or
-                      you can email us at email@email.com. By providing your
+                      We&apos;ll review your information then reach out to you,
+                      or you can email us at email@email.com. By providing your
                       email, you agree to our{" "}
                       <a href="#" className="font-medium text-black">
                         terms of service
