@@ -6,9 +6,8 @@ import Layout from "../components/layout";
 import WaveSep from "../components/waveSep/waveSep";
 import Stats from "../components/hero/stats/stats";
 import History from "../components/hero/history/history";
-import FAQ from "../components/hero/faq/faq"
+import FAQ from "../components/hero/faq/faq";
 import Navbar from "../components/navbar/navbar";
-
 
 export default function Home() {
   return (
@@ -19,9 +18,7 @@ export default function Home() {
 
       <Navbar useBigLetter={false} />
 
-      <Hero>
-
-      </Hero>
+      <Hero></Hero>
 
       <WaveSep className="" />
 
@@ -31,8 +28,6 @@ export default function Home() {
         {/* <History /> */}
         <FAQ />
       </div>
-
-
 
       <Footer />
     </Layout>
