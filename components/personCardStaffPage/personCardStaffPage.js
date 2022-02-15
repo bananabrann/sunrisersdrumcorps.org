@@ -7,7 +7,9 @@ export default function PersonCardStaffPage(person) {
         <div className="flex flex-col space-y-3">
           <div className="h-0 aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
             <img
-              className={`object-cover shadow-lg rounded-lg ${person.imageUrl.includes('defaults') ? 'opacity-30' : ''}`}
+              className={`object-cover shadow-lg rounded-lg ${
+                person.imageUrl.includes("defaults") ? "opacity-30" : ""
+              }`}
               src={person.imageUrl}
               alt=""
             />
@@ -26,7 +28,7 @@ export default function PersonCardStaffPage(person) {
         <div className="sm:col-span-2">
           <div className="space-y-4">
             <div className="text-xl leading-6 font-medium space-y-1">
-              <h2 className="font-bold" >{person.name}</h2>
+              <h2 className="font-bold">{person.name}</h2>
               <p className="text-blue">{person.role}</p>
             </div>
             <div className="text-lg">
