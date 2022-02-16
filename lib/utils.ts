@@ -7,7 +7,7 @@ export function encodeBase64(s: string): string {
   return base64;
 }
 
-export function decodeBase64(s: string): string  {
+export function decodeBase64(s: string): string {
   const words = CryptoJS.enc.Base64.parse(s);
   const textString = CryptoJS.enc.Utf8.stringify(words);
   return textString;
