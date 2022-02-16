@@ -9,7 +9,7 @@ export default async function handler(
   if (req.method === "GET") {
     const id: number = Number(req.query.id);
 
-    if (isNaN(id)) return res.status(400).json({ message: "Id provided is not a number." });
+    if (isNaN(id)) return res.status(400).json({ message: "id expects a number." });
 
     try {
       const results: IResult<User> = await query(
