@@ -1,7 +1,7 @@
 import { IResult } from "mssql";
 import { NextApiRequest, NextApiResponse } from "next";
 import { News, query } from "../../../lib/db";
-import { decodeBase64, encodeBase64, getHash } from "../../../lib/utils";
+import { isAuthorized } from "../../../lib/utils";
 
 export default async function handler(
   req: NextApiRequest,
@@ -23,21 +23,7 @@ export default async function handler(
   } else if (req.method === "POST") {
     const { slug, title, published, draft, content } = req.body;
 
-    // console.log(req.headers.authorization.split(' ')[1]);
-
-    // NOTE -- By default, HTTP Basic Auth provides password in base64
-    //         username:password
-    const providedPassword: string = req.headers.authorization.split(" ")[1];
-    const providedAuthKey = getHash(providedPassword);
-    const envAdminKeyHash = getHash(encodeBase64(process.env.ADMIN_KEY));
-
-    if (providedAuthKey !== envAdminKeyHash) {
-      console.log(
-        `[401] Client ${req.headers["user-agent"]} blocked to POST /api/news`
-      );
-
-      return res.status(401).json({ message: "Bad password." });
-    } else {
+    if (isAuthorized(req)) {
       if (!slug || !title || !published || !content || draft === undefined) {
         return res
           .status(400)
@@ -55,6 +41,12 @@ export default async function handler(
       } catch (error) {
         res.status(500).json({ message: error.message, error: error });
       }
+    } else {
+      console.log(
+        `[401] Client ${req.headers["user-agent"]} blocked to POST /api/news`
+      );
+
+      return res.status(401).json({ message: "Not authorized." });
     }
 
     return res.status(200).json({ message: "Hi!" });
