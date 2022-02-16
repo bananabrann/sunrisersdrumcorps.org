@@ -9,6 +9,15 @@ export interface User {
   superpowers: boolean;
 }
 
+export interface News {
+  id: number;
+  slug: string;
+  title: string;
+  published: Date;
+  draft: boolean;
+  content: string;
+}
+
 const config = {
   authentication: {
     options: {
