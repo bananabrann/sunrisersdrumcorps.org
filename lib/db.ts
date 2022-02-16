@@ -1,6 +1,4 @@
-import { IResult, MSSQLError } from "mssql";
-import { defaultConfig } from "next/dist/server/config-shared";
-import { Config } from "serverless-mysql";
+import { config, IResult, MSSQLError } from "mssql";
 
 const sql = require("mssql");
 
