@@ -6,7 +6,10 @@ import { query } from "../../lib/db";
 //   res.status(200).json({ name: "John Doe" });
 // }
 
-const handler: NextApiHandler = async (req: NextApiRequest, res: NextApiResponse) => {
+const handler: NextApiHandler = async (
+  req: NextApiRequest,
+  res: NextApiResponse
+) => {
   // const {username, password, superpowers} = req.body;
 
   try {
@@ -18,16 +21,16 @@ const handler: NextApiHandler = async (req: NextApiRequest, res: NextApiResponse
       `,
       [username, password, superpowers]
       */
-     `
+      `
     INSERT INTO [dbo].Users (username, password, superpowers)
     VALUE (?, ?, ?)
      `,
-     ['bobbyjoe123', 'totallysecurepassword', 0]
-    )
-    res.json({results})
-  } catch(error) {
-    res.status(500).json({message: error.message})
+      ["bobbyjoe123", "totallysecurepassword", 0]
+    );
+    res.json({ results });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
   }
-}
+};
 
-export default handler
+export default handler;
