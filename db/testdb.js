@@ -10,7 +10,7 @@ const config = {
     },
     type: "default"
   },
-  server: process.env.DB_SERVER,
+  server: process.env.DB_HOST,
   options: {
     database: process.env.DB_NAME,
     encrypt: true

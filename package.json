@@ -18,12 +18,18 @@
     "@tailwindcss/forms": "^0.4.0",
     "dotenv": "^16.0.0",
     "heroicons": "^1.0.5",
+    "mssql": "^8.0.2",
     "next": "^12.0.8",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "serverless-mysql": "^1.5.4",
+    "swr": "^1.2.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",
+    "@types/mssql": "^7.1.5",
+    "@types/react": "^17.0.39",
+    "@types/tedious": "^4.0.7",
     "autoprefixer": "^10.4.2",
     "eslint": "8.7.0",
     "eslint-config-next": "^12.0.8",
