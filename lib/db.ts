@@ -33,17 +33,15 @@ const config = {
   },
 };
 
-export async function query(
-  query: string
-) {
-  process.stdout.write("Query called ... ")
+export async function query(query: string) {
+  process.stdout.write("Query called ... ");
 
   const result: Promise<IResult<any>> | MSSQLError = (async () => {
     try {
       await sql.connect(config);
       const result = await sql.query(query);
       process.stdout.write("OK\n");
-      
+
       return result;
     } catch (err) {
       process.stdout.write("ERROR\n");
