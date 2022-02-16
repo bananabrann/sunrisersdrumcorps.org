@@ -2,13 +2,11 @@ import { IResult } from "mssql";
 import { NextApiRequest, NextApiResponse } from "next";
 import { query, User } from "../../../lib/db";
 
-export default async function getUsers(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.method !== "GET") {
-    res.status(405).json({ message: "Method not allowed." });
-  } else {
+  if (req.method === "GET") {
     try {
       const results: IResult<User> = await query(
         `
@@ -21,5 +19,9 @@ export default async function getUsers(
     } catch (error) {
       res.status(500).json({ message: error.message, error: error });
     }
+  } else {
+    res.status(405).json({ message: "Method not allowed." });
+
+    // TODO -- Add POST method
   }
 }
