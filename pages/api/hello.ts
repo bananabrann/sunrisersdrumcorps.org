@@ -6,6 +6,8 @@ import { query } from "../../lib/db";
 //   res.status(200).json({ name: "John Doe" });
 // }
 
+/*
+
 const handler: NextApiHandler = async (
   req: NextApiRequest,
   res: NextApiResponse
@@ -14,18 +16,15 @@ const handler: NextApiHandler = async (
 
   try {
     const results = await query(
-      /*
       `
       INSERT INTO [dbo].Users (username, password, superpowers)
       VALUES (?, ?, ?)
       `,
       [username, password, superpowers]
-      */
-      `
-    INSERT INTO [dbo].Users (username, password, superpowers)
-    VALUE (?, ?, ?)
-     `,
-      ["bobbyjoe123", "totallysecurepassword", 0]
+      // `
+      // //   INSERT INTO [dbo].Users (username, password, superpowers)
+      // //   VALUE (?, ?, ?)`,
+      // ["bobbyjoe123", "totallysecurepassword", 0]
     );
     res.json({ results });
   } catch (error) {
@@ -34,3 +33,5 @@ const handler: NextApiHandler = async (
 };
 
 export default handler;
+
+*/
