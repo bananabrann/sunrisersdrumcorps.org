@@ -1,6 +1,7 @@
-import { IResult } from "mssql";
 import { NextApiRequest, NextApiResponse } from "next";
-import { query, User } from "../../../lib/db";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
 
 export default async function handler(
   req: NextApiRequest,
@@ -8,14 +9,8 @@ export default async function handler(
 ) {
   if (req.method === "GET") {
     try {
-      const results: IResult<User> = await query(
-        `
-        SELECT * FROM Users
-        ORDER BY id DESC
-        `
-      );
-
-      return res.status(200).json({ results });
+      const users = await prisma.user.findMany();
+      return res.status(200).json(users);
     } catch (error) {
       res.status(500).json({ message: error.message, error: error });
     }
